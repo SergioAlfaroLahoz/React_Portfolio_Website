@@ -1,0 +1,533 @@
+.App {
+  background: url("../../img/Galaxy.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto', 'Oxygen', Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+.Start {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 721px;
+}
+
+.Home {
+  background: #000000de;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  text-align: center;
+  -webkit-clip-path: circle(90px at 50% 50%);
+          clip-path: circle(90px at 50% 50%);
+  -webkit-transition: 2s ease all;
+  transition: 2s ease all;
+}
+
+.Home .home-button1 {
+  position: absolute;
+  width: 10%;
+  height: 140px;
+  top: 40.5%;
+  left: 45%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Home .home-button1 img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 80%;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+}
+
+.Home .home-button2 {
+  position: absolute;
+  width: 10%;
+  height: 140px;
+  top: 0%;
+  left: 45%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Home .home-button2 img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 0%;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+}
+
+.Home .Sergio {
+  position: absolute;
+  width: auto;
+  height: 630px;
+  bottom: 0%;
+  left: 9%;
+  opacity: 0;
+  -webkit-transition: 2.5s all ease;
+  transition: 2.5s all ease;
+}
+
+.Home .text-holder {
+  position: absolute;
+  width: 50%;
+  background: #000000e5;
+  height: 400px;
+  left: 100%;
+  bottom: 5%;
+  z-index: 10;
+  border: 8px solid #06634c;
+  -webkit-transition: 2s all ease;
+  transition: 2s all ease;
+  overflow: hidden;
+}
+
+.Home .text-holder .presentation {
+  position: absolute;
+  margin-top: -384px;
+  height: 384px;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+
+.Home .text-holder .presentation.active {
+  -webkit-animation: newWindow 1s ease;
+          animation: newWindow 1s ease;
+  margin-top: 0px;
+}
+
+.Home .text-holder .electronic {
+  position: absolute;
+  width: 100%;
+  height: 384px;
+  background: url("../../img/Electronic_board.jpg");
+  margin-top: -384px;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+
+.Home .text-holder .electronic div {
+  background: #0000007e;
+  height: 384px;
+}
+
+.Home .text-holder .electronic.active {
+  -webkit-animation: newWindow 1s ease;
+          animation: newWindow 1s ease;
+  margin-top: 0px;
+}
+
+.Home .text-holder .automation {
+  position: absolute;
+  width: 100%;
+  height: 384px;
+  background: url("../../img/Automation_robot.jpg");
+  margin-top: -384px;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+
+.Home .text-holder .automation div {
+  background: #0000007e;
+  height: 384px;
+}
+
+.Home .text-holder .automation.active {
+  -webkit-animation: newWindow 1s ease;
+          animation: newWindow 1s ease;
+  margin-top: 0px;
+}
+
+.Home .text-holder .webDesign {
+  position: absolute;
+  width: 100%;
+  height: 384px;
+  background: url("../../img/Web_design.png");
+  background-size: auto 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -384px;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+
+.Home .text-holder .webDesign div {
+  background: #0000007e;
+  height: 384px;
+}
+
+.Home .text-holder .webDesign.active {
+  -webkit-animation: newWindow 1s ease;
+          animation: newWindow 1s ease;
+  margin-top: 0px;
+}
+
+.Home .text-holder .skills {
+  position: absolute;
+  width: 100%;
+  height: 384px;
+  background: url("../../img/Skills.jpg");
+  background-position-y: -30px;
+  margin-top: -384px;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+
+.Home .text-holder .skills div {
+  background: #0000007e;
+  height: 384px;
+}
+
+.Home .text-holder .skills.active {
+  -webkit-animation: newWindow 1s ease;
+          animation: newWindow 1s ease;
+  margin-top: 0px;
+}
+
+.Home .text-holder h2 {
+  font-size: 40px;
+  padding: 20px;
+}
+
+.Home .text-holder h3 {
+  font-size: 27px;
+  padding: 5px;
+}
+
+.Home .text-holder h4 {
+  font-size: 22px;
+  padding: 7px;
+}
+
+.Home .text-holder .text {
+  font-size: 18px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.Home .text-holder hr {
+  width: 43%;
+  margin: auto;
+  margin-top: 5px;
+  border: 0.2px solid;
+}
+
+.Home .text-holder .socialMedia {
+  width: 35%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: 0.5fr 0.5fr 0.5fr;
+      grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Home .text-holder .socialMedia a {
+  width: 100%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.Home .text-holder .socialMedia a:hover {
+  -webkit-animation: rotate 1.5s ease;
+          animation: rotate 1.5s ease;
+}
+
+.Home .text-holder .socialMedia a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.Home .text-holder .navbar {
+  width: 20%;
+  height: 384px;
+  position: absolute;
+  left: 80%;
+  bottom: 0%;
+  z-index: 10000;
+}
+
+.Home .text-holder .navbar .icons-holder {
+  width: 100%;
+  height: 400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Home .text-holder .navbar .icons-holder .arrow-holder {
+  width: 50%;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.Home .text-holder .navbar .icons-holder .arrow-holder .arrow {
+  width: 100%;
+  height: 55px;
+  color: #fff;
+}
+
+.Home .text-holder .navbar .icons-holder .arrow-holder .arrow:hover {
+  cursor: pointer;
+  color: #06634c;
+}
+
+.Home .text-holder .navbar .icons-holder .circle-holder {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 12px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Home .text-holder .navbar .icons-holder .circle-holder .circle.active {
+  color: #06634c;
+}
+
+.Home:hover {
+  cursor: pointer;
+  -webkit-clip-path: circle(70px at 50% 50%);
+          clip-path: circle(70px at 50% 50%);
+}
+
+.Home:hover .home-button1 img {
+  width: 100%;
+}
+
+.Home.active {
+  -webkit-clip-path: circle(100% at 50% 50%);
+          clip-path: circle(100% at 50% 50%);
+  background: #000;
+  cursor: auto;
+}
+
+.Home.active .home-button1 img {
+  width: 0%;
+}
+
+.Home.active .home-button2 img {
+  -webkit-animation: appear 2s ease;
+          animation: appear 2s ease;
+  width: 50%;
+}
+
+.Home.active .home-button2 img:hover {
+  cursor: pointer;
+  width: 70%;
+}
+
+.Home.active .Sergio {
+  position: absolute;
+  width: auto;
+  height: 630px;
+  bottom: 0%;
+  left: 9%;
+  opacity: 1;
+  z-index: 1000;
+}
+
+.Home.active .text-holder {
+  left: 25%;
+  -webkit-transition: 2s all ease;
+  transition: 2s all ease;
+  -webkit-animation: appear-text 2s ease;
+          animation: appear-text 2s ease;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes appear {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes appear-text {
+  0% {
+    left: 100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 25%;
+  }
+}
+
+@keyframes appear-text {
+  0% {
+    left: 100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 25%;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  40% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  60% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  80% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  40% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  60% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  80% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes newWindow {
+  0% {
+    margin-top: 384px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@keyframes newWindow {
+  0% {
+    margin-top: 384px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@-webkit-keyframes oldWindow {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -384px;
+  }
+}
+
+@keyframes oldWindow {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -384px;
+  }
+}
+/*# sourceMappingURL=App.css.map */
