@@ -6,7 +6,7 @@
   font-weight: bold;
 }
 
-.Start {
+.App .Start {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -16,10 +16,10 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  height: 721px;
+  height: 100vh;
 }
 
-.Home {
+.App .Home {
   background: #000000de;
   position: fixed;
   top: 0;
@@ -33,7 +33,7 @@
   transition: 2s ease all;
 }
 
-.Home .home-button1 {
+.App .Home .home-button1 {
   position: absolute;
   width: 10%;
   height: 140px;
@@ -51,7 +51,7 @@
           align-items: center;
 }
 
-.Home .home-button1 img {
+.App .Home .home-button1 img {
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -62,7 +62,7 @@
   transition: 1s ease all;
 }
 
-.Home .home-button2 {
+.App .Home .home-button2 {
   position: absolute;
   width: 10%;
   height: 140px;
@@ -80,7 +80,7 @@
           align-items: center;
 }
 
-.Home .home-button2 img {
+.App .Home .home-button2 img {
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -91,7 +91,22 @@
   transition: 1s ease all;
 }
 
-.Home .Sergio {
+.App .Home .About {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #ffffff;
+  -webkit-transition: 0s ease all;
+  transition: 0s ease all;
+}
+
+.App .Home .About:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.App .Home .Sergio {
   position: absolute;
   width: auto;
   height: 630px;
@@ -102,7 +117,7 @@
   transition: 2.5s all ease;
 }
 
-.Home .text-holder {
+.App .Home .text-holder {
   position: absolute;
   width: 50%;
   background: #000000e5;
@@ -116,7 +131,7 @@
   overflow: hidden;
 }
 
-.Home .text-holder .presentation {
+.App .Home .text-holder .presentation {
   position: absolute;
   margin-top: -384px;
   height: 384px;
@@ -124,13 +139,13 @@
   transition: 1s all ease;
 }
 
-.Home .text-holder .presentation.active {
+.App .Home .text-holder .presentation.active {
   -webkit-animation: newWindow 1s ease;
           animation: newWindow 1s ease;
   margin-top: 0px;
 }
 
-.Home .text-holder .electronic {
+.App .Home .text-holder .electronic {
   position: absolute;
   width: 100%;
   height: 384px;
@@ -140,18 +155,18 @@
   transition: 1s all ease;
 }
 
-.Home .text-holder .electronic div {
+.App .Home .text-holder .electronic div {
   background: #0000007e;
   height: 384px;
 }
 
-.Home .text-holder .electronic.active {
+.App .Home .text-holder .electronic.active {
   -webkit-animation: newWindow 1s ease;
           animation: newWindow 1s ease;
   margin-top: 0px;
 }
 
-.Home .text-holder .automation {
+.App .Home .text-holder .automation {
   position: absolute;
   width: 100%;
   height: 384px;
@@ -161,18 +176,18 @@
   transition: 1s all ease;
 }
 
-.Home .text-holder .automation div {
+.App .Home .text-holder .automation div {
   background: #0000007e;
   height: 384px;
 }
 
-.Home .text-holder .automation.active {
+.App .Home .text-holder .automation.active {
   -webkit-animation: newWindow 1s ease;
           animation: newWindow 1s ease;
   margin-top: 0px;
 }
 
-.Home .text-holder .webDesign {
+.App .Home .text-holder .webDesign {
   position: absolute;
   width: 100%;
   height: 384px;
@@ -185,18 +200,18 @@
   transition: 1s all ease;
 }
 
-.Home .text-holder .webDesign div {
+.App .Home .text-holder .webDesign div {
   background: #0000007e;
   height: 384px;
 }
 
-.Home .text-holder .webDesign.active {
+.App .Home .text-holder .webDesign.active {
   -webkit-animation: newWindow 1s ease;
           animation: newWindow 1s ease;
   margin-top: 0px;
 }
 
-.Home .text-holder .skills {
+.App .Home .text-holder .skills {
   position: absolute;
   width: 100%;
   height: 384px;
@@ -207,46 +222,46 @@
   transition: 1s all ease;
 }
 
-.Home .text-holder .skills div {
+.App .Home .text-holder .skills div {
   background: #0000007e;
   height: 384px;
 }
 
-.Home .text-holder .skills.active {
+.App .Home .text-holder .skills.active {
   -webkit-animation: newWindow 1s ease;
           animation: newWindow 1s ease;
   margin-top: 0px;
 }
 
-.Home .text-holder h2 {
+.App .Home .text-holder h2 {
   font-size: 40px;
   padding: 20px;
 }
 
-.Home .text-holder h3 {
+.App .Home .text-holder h3 {
   font-size: 27px;
   padding: 5px;
 }
 
-.Home .text-holder h4 {
+.App .Home .text-holder h4 {
   font-size: 22px;
   padding: 7px;
 }
 
-.Home .text-holder .text {
+.App .Home .text-holder .text {
   font-size: 18px;
   padding: 15px;
   margin-top: 20px;
 }
 
-.Home .text-holder hr {
+.App .Home .text-holder hr {
   width: 43%;
   margin: auto;
   margin-top: 5px;
   border: 0.2px solid;
 }
 
-.Home .text-holder .socialMedia {
+.App .Home .text-holder .socialMedia {
   width: 35%;
   margin: auto;
   margin-top: 10px;
@@ -264,7 +279,7 @@
           align-items: center;
 }
 
-.Home .text-holder .socialMedia a {
+.App .Home .text-holder .socialMedia a {
   width: 100%;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -273,18 +288,18 @@
       align-self: center;
 }
 
-.Home .text-holder .socialMedia a:hover {
+.App .Home .text-holder .socialMedia a:hover {
   -webkit-animation: rotate 1.5s ease;
           animation: rotate 1.5s ease;
 }
 
-.Home .text-holder .socialMedia a img {
+.App .Home .text-holder .socialMedia a img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
 
-.Home .text-holder .navbar {
+.App .Home .text-holder .navbar {
   width: 20%;
   height: 384px;
   position: absolute;
@@ -293,7 +308,7 @@
   z-index: 10000;
 }
 
-.Home .text-holder .navbar .icons-holder {
+.App .Home .text-holder .navbar .icons-holder {
   width: 100%;
   height: 400px;
   display: -ms-grid;
@@ -308,24 +323,24 @@
           align-items: center;
 }
 
-.Home .text-holder .navbar .icons-holder .arrow-holder {
+.App .Home .text-holder .navbar .icons-holder .arrow-holder {
   width: 50%;
   -ms-grid-column-align: end;
       justify-self: end;
 }
 
-.Home .text-holder .navbar .icons-holder .arrow-holder .arrow {
+.App .Home .text-holder .navbar .icons-holder .arrow-holder .arrow {
   width: 100%;
   height: 55px;
   color: #fff;
 }
 
-.Home .text-holder .navbar .icons-holder .arrow-holder .arrow:hover {
+.App .Home .text-holder .navbar .icons-holder .arrow-holder .arrow:hover {
   cursor: pointer;
   color: #06634c;
 }
 
-.Home .text-holder .navbar .icons-holder .circle-holder {
+.App .Home .text-holder .navbar .icons-holder .circle-holder {
   display: -ms-grid;
   display: grid;
   grid-gap: 12px;
@@ -339,43 +354,43 @@
           align-items: center;
 }
 
-.Home .text-holder .navbar .icons-holder .circle-holder .circle.active {
+.App .Home .text-holder .navbar .icons-holder .circle-holder .circle.active {
   color: #06634c;
 }
 
-.Home:hover {
+.App .Home:hover {
   cursor: pointer;
   -webkit-clip-path: circle(70px at 50% 50%);
           clip-path: circle(70px at 50% 50%);
 }
 
-.Home:hover .home-button1 img {
+.App .Home:hover .home-button1 img {
   width: 100%;
 }
 
-.Home.active {
+.App .Home.active {
   -webkit-clip-path: circle(100% at 50% 50%);
           clip-path: circle(100% at 50% 50%);
   background: #000;
   cursor: auto;
 }
 
-.Home.active .home-button1 img {
+.App .Home.active .home-button1 img {
   width: 0%;
 }
 
-.Home.active .home-button2 img {
+.App .Home.active .home-button2 img {
   -webkit-animation: appear 2s ease;
           animation: appear 2s ease;
   width: 50%;
 }
 
-.Home.active .home-button2 img:hover {
+.App .Home.active .home-button2 img:hover {
   cursor: pointer;
   width: 70%;
 }
 
-.Home.active .Sergio {
+.App .Home.active .Sergio {
   position: absolute;
   width: auto;
   height: 630px;
@@ -383,14 +398,74 @@
   left: 9%;
   opacity: 1;
   z-index: 1000;
+  -webkit-animation: opacity 2s ease;
+          animation: opacity 2s ease;
 }
 
-.Home.active .text-holder {
+.App .Home.active .text-holder {
   left: 25%;
   -webkit-transition: 2s all ease;
   transition: 2s all ease;
   -webkit-animation: appear-text 2s ease;
           animation: appear-text 2s ease;
+}
+
+.App .Home.active .about-holder {
+  top: 25%;
+  -webkit-transition: 2s all ease;
+  transition: 2s all ease;
+}
+
+.App .Home .about-holder {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background: #000000e5;
+  left: 25%;
+  top: -25%;
+  z-index: 100;
+  border: 8px solid #06634c;
+  -webkit-transition: 2s all ease;
+  transition: 2s all ease;
+  overflow: hidden;
+  -webkit-animation: down 1s ease;
+          animation: down 1s ease;
+}
+
+.App .Home .about-holder .arrowDown {
+  width: 100%;
+  height: 60px;
+  color: #fff;
+}
+
+.App .Home .about-holder h1 {
+  margin: auto;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.App .Home .about-holder a img {
+  width: 10%;
+}
+
+.App .Home .about-holder a img:hover {
+  -webkit-animation: rotate 1.5s ease;
+          animation: rotate 1.5s ease;
+}
+
+.App .Home .Back {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #ffffff;
+  -webkit-transition: 0s ease all;
+  transition: 0s ease all;
+}
+
+.App .Home .Back:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 @-webkit-keyframes appear {
@@ -528,6 +603,42 @@
   }
   100% {
     margin-top: -384px;
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    top: -25%;
+  }
+  100% {
+    top: 25%;
+  }
+}
+
+@keyframes down {
+  0% {
+    top: -25%;
+  }
+  100% {
+    top: 25%;
+  }
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=App.css.map */

@@ -1,11 +1,15 @@
 import React, {Component} from 'react'; 
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'; 
+
+//Styles
 import './components/css/App/App.css'; 
 
 //Components
-import Particlesc from './components/particlesc'; 
-import Start from './components/start'; 
-import Content from './components/content';
-import Navbar from './components/navbar';
+import Particlesc from './components/js/particlesc'; 
+import Start from './components/js/start'; 
+import Content from './components/js/content';
+import Navbar from './components/js/navbar';
+import About from './components/js/about';
 
 //Pictures
 import Brain from './components/img/Brain.png';
@@ -74,35 +78,54 @@ class App extends Component {
   }
 
   render() {
-    return (  
-      <div className="App">
+    return (
+      <Router>
 
-        <div className="Start">
-          <Start/>
-        </div>
+        <div className="App">
 
-        <div className={this.state.home}>
-          <Particlesc/>
-          <p className='home-button1' onClick={this.onClick1}>
-            <img src={Brain} alt="Brain"></img>
-          </p>
-
-          <p className='home-button2' onClick={this.onClick2}>
-            <img src={Brain} alt="Brain"></img>
-          </p>
-
-          <img className="Sergio" src={Sergio} alt="Sergio"></img>
-          <div className="text-holder">
-            <div className="slide active">
-              <Content windowActive={this.state.windowActive} presentation={this.state.presentation} electronic={this.state.electronic} automation={this.state.automation} webDesign={this.state.webDesign} skills={this.state.skills}/>
-            </div>
-            <div className="navbar">
-              <Navbar changeWindow={this.changeWindow}/>
-            </div>
+          <div className="Start">
+            <Start/>
           </div>
+
+          <div className={this.state.home}>
+
+            <Particlesc/>
+
+            <p className='home-button1' onClick={this.onClick1}>
+              <img src={Brain} alt="Brain"></img>
+            </p>
+
+            <p className='home-button2' onClick={this.onClick2}>
+              <img src={Brain} alt="Brain"></img>
+            </p>
+
+            <Switch>
+
+              <Route exact path="/">
+                <Link to="/About"><h2 className='About'>About</h2></Link>
+                <img className="Sergio" src={Sergio} alt="Sergio"></img>
+                <div className="text-holder">
+                  <div className="slide active">
+                    <Content windowActive={this.state.windowActive} presentation={this.state.presentation} electronic={this.state.electronic} automation={this.state.automation} webDesign={this.state.webDesign} skills={this.state.skills}/>
+                  </div>
+                  <div className="navbar">
+                    <Navbar changeWindow={this.changeWindow}/>
+                  </div>
+                </div>
+              </Route>
+
+              <Route path="/About">
+                <Link to="/"><h2 className='Back'>Back</h2></Link>
+                <About/>
+              </Route>
+
+            </Switch>
+
+          </div>
+
         </div>
 
-      </div>
+      </Router>
     ); 
   }
 } 

@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 
 //Pictures
-import GitHub from './img/GitHub.png';
-import LinkedIn from './img/LinkedIn.png';
-import Gmail from './img/Gmail.png';
+import GitHub from '../../img/GitHub.png';
+import LinkedIn from '../../img/LinkedIn.png';
+import Gmail from '../../img/Gmail.png';
 
 
 export default class Presentation extends Component {

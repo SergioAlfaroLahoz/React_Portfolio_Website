@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 
 //Components
-import Presentation from './presentation';
-import Electronic from './electronic';
-import Automation from './automation';
-import WebDesign from './webDesign';
-import Skills from './skills';
+import Presentation from './windows/presentation';
+import Electronic from './windows/electronic';
+import Automation from './windows/automation';
+import WebDesign from './windows/webDesign';
+import Skills from './windows/skills';
 
 
 export default class Content extends Component {
