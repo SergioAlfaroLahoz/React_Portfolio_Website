@@ -23,35 +23,37 @@ $primary: #06634c
         top: 0
         width: 100%
         height: 100%
-        z-index: 100
         text-align: center
-        clip-path: circle(90px at 50% 50%)
+        clip-path: circle(7% at 50% 50%)
         transition: 2s ease all
 
         .home-button1
             position: absolute
             width: 10%
-            height: 140px
-            top: 40.5%
-            left: 45%
+            height: 20%
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
             display: grid
             grid-template-columns: 100%
             grid-template-rows: 100%
             justify-items: center
             align-items: center
+            z-index: 100
 
             img 
                 justify-self: center
                 align-self: center
-                width: 80%  //80
+                width: 70%  //80
                 transition: 1s ease all
 
         .home-button2
             position: absolute
             width: 10%
-            height: 140px
+            height: 20%
             top: 0%
-            left: 45%
+            left: 50%
+            transform: translate(-50%, 0%)
             display: grid
             grid-template-columns: 100%
             grid-template-rows: 100%
@@ -88,18 +90,18 @@ $primary: #06634c
             position: absolute
             width: 50%
             background: #000000e5
-            height: 400px
+            height: 55%
             left: 100%
             bottom: 5%
-            z-index: 10
             border: 8px solid $primary
             transition: 2s all ease
             overflow: hidden
 
             .presentation
                 position: absolute
-                margin-top: -384px
-                height: 384px
+                width: 100%
+                margin-top: -51.05%
+                height: 100%
                 transition: 1s all ease
 
                 &.active
@@ -109,14 +111,14 @@ $primary: #06634c
             .electronic
                 position: absolute
                 width: 100%
-                height: 384px
+                height: 100%
                 background: url('../../img/Electronic_board.jpg')
-                margin-top: -384px
+                margin-top: -51.05%
                 transition: 1s all ease
 
                 div
                     background: #0000007e
-                    height: 384px
+                    height: 100%
 
                 &.active
                     animation: newWindow 1s ease
@@ -125,14 +127,14 @@ $primary: #06634c
             .automation
                 position: absolute
                 width: 100%
-                height: 384px
+                height: 100%
                 background: url('../../img/Automation_robot.jpg')
-                margin-top: -384px
+                margin-top: -51.05%
                 transition: 1s all ease
 
                 div
                     background: #0000007e
-                    height: 384px
+                    height: 100%
 
                 &.active
                     animation: newWindow 1s ease
@@ -141,17 +143,17 @@ $primary: #06634c
             .webDesign
                 position: absolute
                 width: 100%
-                height: 384px
+                height: 100%
                 background: url('../../img/Web_design.png')
                 background-size: auto 150%
                 background-repeat: no-repeat
                 background-position: center
-                margin-top: -384px
+                margin-top: -51.05%
                 transition: 1s all ease
 
                 div
                     background: #0000007e
-                    height: 384px
+                    height: 100%
 
                 &.active
                     animation: newWindow 1s ease
@@ -160,15 +162,16 @@ $primary: #06634c
             .skills
                 position: absolute
                 width: 100%
-                height: 384px
+                height: 100%
                 background: url('../../img/Skills.jpg')
                 background-position-y: -30px
-                margin-top: -384px
+                background-position-x: 3px
+                margin-top: -51.05%
                 transition: 1s all ease
 
                 div
                     background: #0000007e
-                    height: 384px
+                    height: 100%
 
                 &.active
                     animation: newWindow 1s ease
@@ -191,19 +194,36 @@ $primary: #06634c
                 padding: 15px
                 margin-top: 20px
 
+        .socialMedia-holder
+            position: absolute
+            width: 18%
+            bottom: 8%
+            left: 125%
+            transform: translate(-50%)
+            z-index: 1000
+            transition: 2s all ease
+            opacity: 0
+
+            &.active1
+                left: 50%
+
+            &.active2
+                bottom: 8%
+                opacity: 1
+
             hr
-                width: 43%
+                width: 100%
                 margin: auto
                 margin-top: 5px
-                border: 0.2px solid
+                border: 0.4px solid
 
             .socialMedia
-                width: 35%
+                width: 90%
                 margin: auto
                 margin-top: 10px
                 padding: 5px
                 display: grid
-                grid-gap: 20px
+                grid-gap: 10%
                 grid-template-columns: 0.5fr 0.5fr 0.5fr
                 grid-template-rows: 1fr
                 justify-items: center
@@ -221,58 +241,60 @@ $primary: #06634c
                         object-fit: cover
                         width: 100%
 
-            .navbar
-                width: 20%
-                height: 384px
-                position: absolute
-                left: 80%
-                bottom: 0%
-                z-index: 10000
+        .navbar
+            opacity: 0
+            width: 10%
+            height: 55%
+            position: absolute
+            left: 65%
+            bottom: 5%
+            z-index: 100
+            transition: .3s all ease
 
-                .icons-holder
-                    width: 100%
-                    height: 400px
+            .icons-holder
+                width: 100%
+                height: 400px
+                display: grid
+                grid-template-columns: 1fr 1fr
+                grid-template-rows: 1fr
+                justify-items: center
+                align-items: center
+
+                .arrow-holder
+                    width: 50%
+                    justify-self: end
+
+                    .arrow
+                        width: 100%
+                        height: 55px
+                        color: #fff
+
+                        &:hover
+                            cursor: pointer
+                            color: $primary
+
+                .circle-holder
                     display: grid
-                    grid-template-columns: 1fr 1fr
-                    grid-template-rows: 1fr
+                    grid-gap: 12px
+                    grid-template-columns: 1fr
+                    grid-template-rows: 1fr 1fr 1fr
                     justify-items: center
                     align-items: center
 
-                    .arrow-holder
-                        width: 50%
-                        justify-self: end
-
-                        .arrow
-                            width: 100%
-                            height: 55px
-                            color: #fff
-
-                            &:hover
-                                cursor: pointer
-                                color: $primary
-
-                    .circle-holder
-                        display: grid
-                        grid-gap: 12px
-                        grid-template-columns: 1fr
-                        grid-template-rows: 1fr 1fr 1fr
-                        justify-items: center
-                        align-items: center
-
-                        .circle
-                            
-                            &.active
-                                color: $primary
+                    .circle
+                        
+                        &.active
+                            color: $primary
 
 
         &:hover
             cursor: pointer
-            clip-path: circle(70px at 50% 50%)
+            clip-path: circle(6% at 50% 50%)
 
             .home-button1
 
                 img 
-                    width: 100%
+                    width: 90%
 
         &.active
             clip-path: circle(100% at 50% 50%)
@@ -297,17 +319,21 @@ $primary: #06634c
             .Sergio
                 position: absolute
                 width: auto
-                height: 630px
+                height: 87%
                 bottom: 0%
                 left: 9%
                 opacity: 1
-                z-index: 1000
+                z-index: 10
                 animation: opacity 2s ease
 
             .text-holder
                 left: 25%
                 transition: 2s all ease
                 animation: appear-text 2s ease
+
+            .navbar
+                opacity: 1
+                animation: appear-buttons  4s ease
 
             .about-holder
                 top: 25%
@@ -320,7 +346,7 @@ $primary: #06634c
             background: #000000e5
             left: 25%
             top: -25%
-            z-index: 100
+            z-index: 10
             border: 8px solid $primary
             transition: 2s all ease
             overflow: hidden
@@ -372,6 +398,14 @@ $primary: #06634c
         left: 100%
     100%
         left: 25%
+
+@keyframes appear-buttons   
+    0%
+        opacity: 0
+    50%
+        opacity: 0
+    100%
+        opacity: 1
 
 @keyframes rotate
     0% 

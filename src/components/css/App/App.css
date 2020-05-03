@@ -25,10 +25,9 @@
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 100;
   text-align: center;
-  -webkit-clip-path: circle(90px at 50% 50%);
-          clip-path: circle(90px at 50% 50%);
+  -webkit-clip-path: circle(7% at 50% 50%);
+          clip-path: circle(7% at 50% 50%);
   -webkit-transition: 2s ease all;
   transition: 2s ease all;
 }
@@ -36,9 +35,11 @@
 .App .Home .home-button1 {
   position: absolute;
   width: 10%;
-  height: 140px;
-  top: 40.5%;
-  left: 45%;
+  height: 20%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
@@ -49,6 +50,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 100;
 }
 
 .App .Home .home-button1 img {
@@ -57,7 +59,7 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 80%;
+  width: 70%;
   -webkit-transition: 1s ease all;
   transition: 1s ease all;
 }
@@ -65,9 +67,11 @@
 .App .Home .home-button2 {
   position: absolute;
   width: 10%;
-  height: 140px;
+  height: 20%;
   top: 0%;
-  left: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
@@ -121,10 +125,9 @@
   position: absolute;
   width: 50%;
   background: #000000e5;
-  height: 400px;
+  height: 55%;
   left: 100%;
   bottom: 5%;
-  z-index: 10;
   border: 8px solid #06634c;
   -webkit-transition: 2s all ease;
   transition: 2s all ease;
@@ -133,8 +136,9 @@
 
 .App .Home .text-holder .presentation {
   position: absolute;
-  margin-top: -384px;
-  height: 384px;
+  width: 100%;
+  margin-top: -51.05%;
+  height: 100%;
   -webkit-transition: 1s all ease;
   transition: 1s all ease;
 }
@@ -148,16 +152,16 @@
 .App .Home .text-holder .electronic {
   position: absolute;
   width: 100%;
-  height: 384px;
+  height: 100%;
   background: url("../../img/Electronic_board.jpg");
-  margin-top: -384px;
+  margin-top: -51.05%;
   -webkit-transition: 1s all ease;
   transition: 1s all ease;
 }
 
 .App .Home .text-holder .electronic div {
   background: #0000007e;
-  height: 384px;
+  height: 100%;
 }
 
 .App .Home .text-holder .electronic.active {
@@ -169,16 +173,16 @@
 .App .Home .text-holder .automation {
   position: absolute;
   width: 100%;
-  height: 384px;
+  height: 100%;
   background: url("../../img/Automation_robot.jpg");
-  margin-top: -384px;
+  margin-top: -51.05%;
   -webkit-transition: 1s all ease;
   transition: 1s all ease;
 }
 
 .App .Home .text-holder .automation div {
   background: #0000007e;
-  height: 384px;
+  height: 100%;
 }
 
 .App .Home .text-holder .automation.active {
@@ -190,19 +194,19 @@
 .App .Home .text-holder .webDesign {
   position: absolute;
   width: 100%;
-  height: 384px;
+  height: 100%;
   background: url("../../img/Web_design.png");
   background-size: auto 150%;
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: -384px;
+  margin-top: -51.05%;
   -webkit-transition: 1s all ease;
   transition: 1s all ease;
 }
 
 .App .Home .text-holder .webDesign div {
   background: #0000007e;
-  height: 384px;
+  height: 100%;
 }
 
 .App .Home .text-holder .webDesign.active {
@@ -214,17 +218,18 @@
 .App .Home .text-holder .skills {
   position: absolute;
   width: 100%;
-  height: 384px;
+  height: 100%;
   background: url("../../img/Skills.jpg");
   background-position-y: -30px;
-  margin-top: -384px;
+  background-position-x: 3px;
+  margin-top: -51.05%;
   -webkit-transition: 1s all ease;
   transition: 1s all ease;
 }
 
 .App .Home .text-holder .skills div {
   background: #0000007e;
-  height: 384px;
+  height: 100%;
 }
 
 .App .Home .text-holder .skills.active {
@@ -254,21 +259,43 @@
   margin-top: 20px;
 }
 
-.App .Home .text-holder hr {
-  width: 43%;
-  margin: auto;
-  margin-top: 5px;
-  border: 0.2px solid;
+.App .Home .socialMedia-holder {
+  position: absolute;
+  width: 18%;
+  bottom: 8%;
+  left: 125%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: 1000;
+  -webkit-transition: 2s all ease;
+  transition: 2s all ease;
+  opacity: 0;
 }
 
-.App .Home .text-holder .socialMedia {
-  width: 35%;
+.App .Home .socialMedia-holder.active1 {
+  left: 50%;
+}
+
+.App .Home .socialMedia-holder.active2 {
+  bottom: 8%;
+  opacity: 1;
+}
+
+.App .Home .socialMedia-holder hr {
+  width: 100%;
+  margin: auto;
+  margin-top: 5px;
+  border: 0.4px solid;
+}
+
+.App .Home .socialMedia-holder .socialMedia {
+  width: 90%;
   margin: auto;
   margin-top: 10px;
   padding: 5px;
   display: -ms-grid;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 10%;
   -ms-grid-columns: 0.5fr 0.5fr 0.5fr;
       grid-template-columns: 0.5fr 0.5fr 0.5fr;
   -ms-grid-rows: 1fr;
@@ -279,7 +306,7 @@
           align-items: center;
 }
 
-.App .Home .text-holder .socialMedia a {
+.App .Home .socialMedia-holder .socialMedia a {
   width: 100%;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -288,27 +315,30 @@
       align-self: center;
 }
 
-.App .Home .text-holder .socialMedia a:hover {
+.App .Home .socialMedia-holder .socialMedia a:hover {
   -webkit-animation: rotate 1.5s ease;
           animation: rotate 1.5s ease;
 }
 
-.App .Home .text-holder .socialMedia a img {
+.App .Home .socialMedia-holder .socialMedia a img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
 
-.App .Home .text-holder .navbar {
-  width: 20%;
-  height: 384px;
+.App .Home .navbar {
+  opacity: 0;
+  width: 10%;
+  height: 55%;
   position: absolute;
-  left: 80%;
-  bottom: 0%;
-  z-index: 10000;
+  left: 65%;
+  bottom: 5%;
+  z-index: 100;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
 }
 
-.App .Home .text-holder .navbar .icons-holder {
+.App .Home .navbar .icons-holder {
   width: 100%;
   height: 400px;
   display: -ms-grid;
@@ -323,24 +353,24 @@
           align-items: center;
 }
 
-.App .Home .text-holder .navbar .icons-holder .arrow-holder {
+.App .Home .navbar .icons-holder .arrow-holder {
   width: 50%;
   -ms-grid-column-align: end;
       justify-self: end;
 }
 
-.App .Home .text-holder .navbar .icons-holder .arrow-holder .arrow {
+.App .Home .navbar .icons-holder .arrow-holder .arrow {
   width: 100%;
   height: 55px;
   color: #fff;
 }
 
-.App .Home .text-holder .navbar .icons-holder .arrow-holder .arrow:hover {
+.App .Home .navbar .icons-holder .arrow-holder .arrow:hover {
   cursor: pointer;
   color: #06634c;
 }
 
-.App .Home .text-holder .navbar .icons-holder .circle-holder {
+.App .Home .navbar .icons-holder .circle-holder {
   display: -ms-grid;
   display: grid;
   grid-gap: 12px;
@@ -354,18 +384,18 @@
           align-items: center;
 }
 
-.App .Home .text-holder .navbar .icons-holder .circle-holder .circle.active {
+.App .Home .navbar .icons-holder .circle-holder .circle.active {
   color: #06634c;
 }
 
 .App .Home:hover {
   cursor: pointer;
-  -webkit-clip-path: circle(70px at 50% 50%);
-          clip-path: circle(70px at 50% 50%);
+  -webkit-clip-path: circle(6% at 50% 50%);
+          clip-path: circle(6% at 50% 50%);
 }
 
 .App .Home:hover .home-button1 img {
-  width: 100%;
+  width: 90%;
 }
 
 .App .Home.active {
@@ -393,11 +423,11 @@
 .App .Home.active .Sergio {
   position: absolute;
   width: auto;
-  height: 630px;
+  height: 87%;
   bottom: 0%;
   left: 9%;
   opacity: 1;
-  z-index: 1000;
+  z-index: 10;
   -webkit-animation: opacity 2s ease;
           animation: opacity 2s ease;
 }
@@ -408,6 +438,12 @@
   transition: 2s all ease;
   -webkit-animation: appear-text 2s ease;
           animation: appear-text 2s ease;
+}
+
+.App .Home.active .navbar {
+  opacity: 1;
+  -webkit-animation: appear-buttons  4s ease;
+          animation: appear-buttons  4s ease;
 }
 
 .App .Home.active .about-holder {
@@ -423,7 +459,7 @@
   background: #000000e5;
   left: 25%;
   top: -25%;
-  z-index: 100;
+  z-index: 10;
   border: 8px solid #06634c;
   -webkit-transition: 2s all ease;
   transition: 2s all ease;
@@ -513,6 +549,30 @@
   }
   100% {
     left: 25%;
+  }
+}
+
+@-webkit-keyframes appear-buttons {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear-buttons {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

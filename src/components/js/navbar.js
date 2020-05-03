@@ -10,7 +10,7 @@ export default class Navbar extends Component {
         super(args);
         this.onClick = this.onClick.bind(this);
         this.state = {
-          window: ['circle active', 'circle', 'circle', 'circle', 'circle']
+          window: this.props.window
         }
     }
     
@@ -30,6 +30,7 @@ export default class Navbar extends Component {
                 this.setState({
                     window: newWindow
                 })
+                this.props.setCircle(this.state.window)
                 break;
             }
         }
