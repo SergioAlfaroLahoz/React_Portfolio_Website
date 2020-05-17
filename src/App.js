@@ -1,5 +1,5 @@
 import React, {Component} from 'react'; 
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'; 
+import {HashRouter, Switch, Route, Link} from 'react-router-dom'; 
 
 //Styles
 import './components/css/App/App.css'; 
@@ -101,7 +101,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <HashRouter basename="/">
 
         <div className="App">
 
@@ -146,7 +146,7 @@ class App extends Component {
 
         </div>
 
-      </Router>
+      </HashRouter>
     ); 
   }
 } 
