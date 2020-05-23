@@ -1,5 +1,59 @@
 //Responsive Design
-@media screen and (max-width: 1000px)
+
+@media screen and (min-height: 770px)
+    .App
+        .Home
+            .Sergio
+                width: 100%
+                height: auto
+                left: 0%
+
+            .text-holder
+                width: 50%
+                .presentation
+                    background-size: auto 100%
+                .electronic
+                    background-size: 100% auto
+                .automation
+                    background-size: auto 100%
+                .webDesign
+                    background-size: auto 100%
+                .skills
+                    background-size: auto 100%
+
+            .navbar
+                left: 69%
+
+            &.active 
+                .text-holder
+                    left: 50%
+                    transform: translate(-50%, 0%)
+                .Sergio
+                    left: 0%
+
+@media screen and (max-width: 1400px)
+    .App
+        .Home
+            .Sergio
+                width: 100%
+                height: auto
+                left: 0%
+
+            .text-holder
+                width: 60%
+
+            .navbar
+                left: 69%
+
+            &.active 
+                .text-holder
+                    left: 50%
+                    transform: translate(-50%, 0%)
+                .Sergio
+                    left: 0%
+
+
+@media screen and (max-width: 1200px)
     .App
         .Home
             .Sergio
@@ -30,6 +84,7 @@
                 .Sergio
                     left: -10%
 
+//Mobile
 @media screen and (max-width: 800px)
     .App
         .Home
@@ -62,18 +117,21 @@
 
                 .presentation
                     margin-top: -153%
+                    background-size: 100% auto
 
                     &.active
                         
                 
                 .electronic
                     margin-top: -153%
+                    background-size: auto 100%
 
                     &.active
                 
                 .automation
                     margin-top: -153%
                     background-position: center
+                    background-size: auto 100%
 
                     &.active
 
@@ -85,7 +143,7 @@
 
                 .skills
                     margin-top: -153%
-                    background-position-x: 25%
+                    background-size: auto 100%
 
                     &.active
 
@@ -164,6 +222,11 @@
                 .text-holder
                     left: 12.5%
                     transform: translate(0%, 0%)
+
+                .socialMedia-holder
+
+                    &.active2
+                        bottom: 37%
 
             .about-holder
                 width: 80%

@@ -1,4 +1,63 @@
-@media screen and (max-width: 1000px) {
+@media screen and (min-height: 770px) {
+  .App .Home .Sergio {
+    width: 100%;
+    height: auto;
+    left: 0%;
+  }
+  .App .Home .text-holder {
+    width: 50%;
+  }
+  .App .Home .text-holder .presentation {
+    background-size: auto 100%;
+  }
+  .App .Home .text-holder .electronic {
+    background-size: 100% auto;
+  }
+  .App .Home .text-holder .automation {
+    background-size: auto 100%;
+  }
+  .App .Home .text-holder .webDesign {
+    background-size: auto 100%;
+  }
+  .App .Home .text-holder .skills {
+    background-size: auto 100%;
+  }
+  .App .Home .navbar {
+    left: 69%;
+  }
+  .App .Home.active .text-holder {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+  .App .Home.active .Sergio {
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .App .Home .Sergio {
+    width: 100%;
+    height: auto;
+    left: 0%;
+  }
+  .App .Home .text-holder {
+    width: 60%;
+  }
+  .App .Home .navbar {
+    left: 69%;
+  }
+  .App .Home.active .text-holder {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+  .App .Home.active .Sergio {
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .App .Home .Sergio {
     width: 100%;
     height: auto;
@@ -68,13 +127,16 @@
   }
   .App .Home .text-holder .presentation {
     margin-top: -153%;
+    background-size: 100% auto;
   }
   .App .Home .text-holder .electronic {
     margin-top: -153%;
+    background-size: auto 100%;
   }
   .App .Home .text-holder .automation {
     margin-top: -153%;
     background-position: center;
+    background-size: auto 100%;
   }
   .App .Home .text-holder .webDesign {
     margin-top: -153%;
@@ -82,7 +144,7 @@
   }
   .App .Home .text-holder .skills {
     margin-top: -153%;
-    background-position-x: 25%;
+    background-size: auto 100%;
   }
   .App .Home .text-holder h2 {
     font-size: 170%;
@@ -162,6 +224,9 @@
     left: 12.5%;
     -webkit-transform: translate(0%, 0%);
             transform: translate(0%, 0%);
+  }
+  .App .Home.active .socialMedia-holder.active2 {
+    bottom: 37%;
   }
   .App .Home .about-holder {
     width: 80%;
