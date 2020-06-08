@@ -1,9 +1,4 @@
-@media screen and (min-height: 770px) {
-  .App .Home .Sergio {
-    width: 100%;
-    height: auto;
-    left: 0%;
-  }
+@media screen and (min-height: 785px) {
   .App .Home .text-holder {
     width: 50%;
   }
@@ -36,11 +31,6 @@
 }
 
 @media screen and (max-width: 1400px) {
-  .App .Home .Sergio {
-    width: 100%;
-    height: auto;
-    left: 0%;
-  }
   .App .Home .text-holder {
     width: 60%;
   }
@@ -58,11 +48,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .App .Home .Sergio {
-    width: 100%;
-    height: auto;
-    left: -100%;
-  }
   .App .Home .text-holder {
     width: 75%;
   }

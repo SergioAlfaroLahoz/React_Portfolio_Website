@@ -21,7 +21,6 @@ export default class Electronic extends Component {
                     <h4>Motors</h4>
                     <h4>Sensors</h4>
                     <h4>Hardware Design</h4>
-                    <h4>PCB Layout</h4>
                 </div>
             </div>    
         );
