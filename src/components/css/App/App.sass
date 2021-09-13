@@ -26,6 +26,7 @@ $primary: #06634c
         text-align: center
         clip-path: circle(7% at 50% 50%)
         transition: 2s ease all
+        overflow: hidden
 
         .home-button1
             position: absolute
@@ -39,7 +40,7 @@ $primary: #06634c
             grid-template-rows: 100%
             justify-items: center
             align-items: center
-            z-index: 100
+            z-index: 1000
 
             img 
                 justify-self: center
@@ -48,17 +49,18 @@ $primary: #06634c
                 transition: 1s ease all
 
         .home-button2
-            position: absolute
+            position: fixed
             width: 10%
             height: 20%
             top: 0%
-            left: 50%
+            left: 49%
             transform: translate(-50%, 0%)
             display: grid
             grid-template-columns: 100%
             grid-template-rows: 100%
             justify-items: center
             align-items: center
+            z-index: 1000
 
             img 
                 justify-self: center
@@ -85,6 +87,18 @@ $primary: #06634c
             left: 9%
             opacity: 0
             transition: 2.5s all ease
+
+        .text-holder2
+            position: relative
+            width: 50%
+            background: #000000e5
+            height: 55%
+            left: 25%
+            // bottom: 5%
+            border: 8px solid $primary
+            transition: 2s all ease
+            overflow: hidden
+            margin-bottom: 5%
         
         .text-holder
             position: absolute
@@ -209,7 +223,7 @@ $primary: #06634c
             bottom: 8%
             left: 125%
             transform: translate(-50%)
-            z-index: 1000
+            z-index: 100
             transition: 2s all ease
             opacity: 0
 
@@ -309,6 +323,7 @@ $primary: #06634c
             clip-path: circle(100% at 50% 50%)
             background: #000
             cursor: auto
+            overflow: auto
 
             .home-button1
 
@@ -326,7 +341,7 @@ $primary: #06634c
                         width: 70%
             
             .Sergio
-                position: absolute
+                position: fixed
                 width: auto
                 height: 87%
                 bottom: 0%
@@ -358,7 +373,7 @@ $primary: #06634c
             z-index: 10
             border: 8px solid $primary
             transition: 2s all ease
-            overflow: hidden
+            overflow: auto
             animation: down 1s ease
 
             .arrowDown

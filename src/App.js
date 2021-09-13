@@ -130,6 +130,14 @@ class App extends Component {
                   <Content windowActive={this.state.windowActive} presentation={this.state.presentation} electronic={this.state.electronic} automation={this.state.automation} webDesign={this.state.webDesign} skills={this.state.skills}/>
                 </div>
                 <SocialMedia socialMedia={this.state.socialMedia}/>
+                <div className="text-holder2">
+                  <Content windowActive={this.state.windowActive} presentation={this.state.presentation} electronic={this.state.electronic} automation={this.state.automation} webDesign={this.state.webDesign} skills={this.state.skills}/>
+                </div>
+                <SocialMedia socialMedia={this.state.socialMedia}/>
+                <div className="text-holder2">
+                  <Content windowActive={this.state.windowActive} presentation={this.state.presentation} electronic={this.state.electronic} automation={this.state.automation} webDesign={this.state.webDesign} skills={this.state.skills}/>
+                </div>
+                <SocialMedia socialMedia={this.state.socialMedia}/>
                 <div className="navbar">
                     <Navbar changeWindow={this.changeWindow} window={this.state.window} setCircle={this.setCircle}/>
                 </div>
