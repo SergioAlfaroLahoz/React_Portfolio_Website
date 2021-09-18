@@ -20,11 +20,21 @@ export default class Content extends Component {
     render(){
         return(
             <div>
-                <Presentation name={this.props.presentation}/>
-                <Electronic name={this.props.electronic}/>
-                <Automation name={this.props.automation}/>
-                <WebDesign name={this.props.webDesign}/>
-                <Skills name={this.props.skills}/>
+                <div className="text-holder">
+                    <Presentation name={this.props.presentation}/>
+                </div>
+                <div className="text-holder-windows">
+                    <Electronic name={this.props.electronic}/>
+                </div>
+                <div className="text-holder-windows">
+                    <Automation name={this.props.automation}/>
+                </div>
+                <div className="text-holder-windows">
+                    <WebDesign name={this.props.webDesign}/>
+                </div>
+                <div className="text-holder-windows">
+                    <Skills name={this.props.skills}/>
+                </div>
             </div>
         );
 

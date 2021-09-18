@@ -25,16 +25,18 @@ class App extends Component {
     this.onClick2 = this.onClick2.bind(this);
     this.setCircle = this.setCircle.bind(this);
     this.changeWindow = this.changeWindow.bind(this);
+    this.myRef = React.createRef();
     this.state = {
       home: 'Home',
       windowActive: 0,
       presentation: 'presentation active',
       socialMedia: 'socialMedia-holder active2',
-      electronic: 'electronic',
+      electronic: 'electronic active',
       automation: 'automation',
       webDesign: 'webDesign',
       skills: 'skills',
-      window: ['circle active', 'circle', 'circle', 'circle', 'circle']
+      window: ['circle active', 'circle', 'circle', 'circle', 'circle'],
+      scrollTop: 0
     }
   }
 
@@ -99,7 +101,19 @@ class App extends Component {
     })
   }
 
+  handleScroll = () => {
+    const scrollY = window.scrollY
+    const scrollTop = this.myRef.current.scrollTop
+    console.log(`onScroll, window.scrollY: ${scrollY} myRef.scrollTop: ${scrollTop}`)
+    this.setState({
+      scrollTop: scrollTop
+    })
+  }
+
   render() {
+    const {
+      scrollTop
+    } = this.state
     return (
       <HashRouter basename="/">
 
@@ -109,7 +123,7 @@ class App extends Component {
             <Start/>
           </div>
 
-          <div className={this.state.home}>
+          <div className={this.state.home} ref={this.myRef} onScroll={this.handleScroll}>
 
             <Particlesc id="particles"/>
 
@@ -126,21 +140,8 @@ class App extends Component {
               <Route exact path="/">
                 <Link to="/About"><h2 className='About'>About</h2></Link>
                 <img className="Sergio" src={Sergio} alt="Sergio"></img>
-                <div className="text-holder">
-                  <Content windowActive={this.state.windowActive} presentation={this.state.presentation} electronic={this.state.electronic} automation={this.state.automation} webDesign={this.state.webDesign} skills={this.state.skills}/>
-                </div>
+                <Content windowActive={this.state.windowActive} presentation={this.state.presentation} electronic={this.state.electronic} automation={this.state.automation} webDesign={this.state.webDesign} skills={this.state.skills}/>
                 <SocialMedia socialMedia={this.state.socialMedia}/>
-                <div className="text-holder2">
-                  <Content windowActive={this.state.windowActive} presentation={this.state.presentation} electronic={this.state.electronic} automation={this.state.automation} webDesign={this.state.webDesign} skills={this.state.skills}/>
-                </div>
-                <SocialMedia socialMedia={this.state.socialMedia}/>
-                <div className="text-holder2">
-                  <Content windowActive={this.state.windowActive} presentation={this.state.presentation} electronic={this.state.electronic} automation={this.state.automation} webDesign={this.state.webDesign} skills={this.state.skills}/>
-                </div>
-                <SocialMedia socialMedia={this.state.socialMedia}/>
-                <div className="navbar">
-                    <Navbar changeWindow={this.changeWindow} window={this.state.window} setCircle={this.setCircle}/>
-                </div>
               </Route>
 
               <Route path="/About">

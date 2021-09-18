@@ -87,18 +87,6 @@ $primary: #06634c
             left: 9%
             opacity: 0
             transition: 2.5s all ease
-
-        .text-holder2
-            position: relative
-            width: 50%
-            background: #000000e5
-            height: 55%
-            left: 25%
-            // bottom: 5%
-            border: 8px solid $primary
-            transition: 2s all ease
-            overflow: hidden
-            margin-bottom: 5%
         
         .text-holder
             position: absolute
@@ -114,13 +102,42 @@ $primary: #06634c
             .presentation
                 position: absolute
                 width: 100%
-                margin-top: -70%
+                margin-top: 0px
                 height: 100%
                 transition: 1s all ease
+
+            h2
+                font-size: 40px
+                padding: 20px
+            
+            h3
+                font-size: 27px
+                padding: 5px
+
+            h4
+                font-size: 22px
+                padding: 7px
+
+            .text
+                font-size: 18px
+                padding: 15px
+                margin-top: 20px
 
                 &.active
                     animation: newWindow 1s ease
                     margin-top: 0px
+
+        .text-holder-windows
+            position: relative
+            width: 50%
+            background: #000000e5
+            left: 25%
+            height: 50vh
+            border: 8px solid $primary
+            transition: 2s all ease
+            overflow: hidden
+            margin-bottom: 5%
+            display: table
 
             .electronic
                 position: absolute
@@ -130,7 +147,7 @@ $primary: #06634c
                 background-size: 100% auto
                 background-repeat: no-repeat
                 background-position: center
-                margin-top: -70%
+                margin-top: 0%
                 transition: 1s all ease
 
                 div
@@ -139,7 +156,7 @@ $primary: #06634c
 
                 &.active
                     animation: newWindow 1s ease
-                    margin-top: 0px
+                    margin-top: 0%
 
             .automation
                 position: absolute
@@ -149,7 +166,7 @@ $primary: #06634c
                 background-size: 100% auto
                 background-repeat: no-repeat
                 background-position: center
-                margin-top: -70%
+                margin-top: 0%
                 transition: 1s all ease
 
                 div
@@ -168,7 +185,7 @@ $primary: #06634c
                 background-size: auto 150%
                 background-repeat: no-repeat
                 background-position: center
-                margin-top: -70%
+                margin-top: 0%
                 transition: 1s all ease
 
                 div
@@ -189,7 +206,7 @@ $primary: #06634c
                 background-position: center
                 //background-position-y: -30px
                 //background-position-x: 3px
-                margin-top: -70%
+                margin-top: 0%
                 transition: 1s all ease
 
                 div
@@ -366,7 +383,7 @@ $primary: #06634c
         .about-holder
             position: absolute
             width: 50%
-            height: 50%
+            height: 60%
             background: #000000e5
             left: 25%
             top: -25%

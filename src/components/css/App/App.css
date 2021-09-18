@@ -123,19 +123,6 @@
   transition: 2.5s all ease;
 }
 
-.App .Home .text-holder2 {
-  position: relative;
-  width: 50%;
-  background: #000000e5;
-  height: 55%;
-  left: 25%;
-  border: 8px solid #06634c;
-  -webkit-transition: 2s all ease;
-  transition: 2s all ease;
-  overflow: hidden;
-  margin-bottom: 5%;
-}
-
 .App .Home .text-holder {
   position: absolute;
   width: 50%;
@@ -152,112 +139,10 @@
 .App .Home .text-holder .presentation {
   position: absolute;
   width: 100%;
-  margin-top: -70%;
+  margin-top: 0px;
   height: 100%;
   -webkit-transition: 1s all ease;
   transition: 1s all ease;
-}
-
-.App .Home .text-holder .presentation.active {
-  -webkit-animation: newWindow 1s ease;
-          animation: newWindow 1s ease;
-  margin-top: 0px;
-}
-
-.App .Home .text-holder .electronic {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: url("../../img/Electronic_board.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: -70%;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
-}
-
-.App .Home .text-holder .electronic div {
-  background: #0000007e;
-  height: 100%;
-}
-
-.App .Home .text-holder .electronic.active {
-  -webkit-animation: newWindow 1s ease;
-          animation: newWindow 1s ease;
-  margin-top: 0px;
-}
-
-.App .Home .text-holder .automation {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: url("../../img/Automation_robot.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: -70%;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
-}
-
-.App .Home .text-holder .automation div {
-  background: #0000007e;
-  height: 100%;
-}
-
-.App .Home .text-holder .automation.active {
-  -webkit-animation: newWindow 1s ease;
-          animation: newWindow 1s ease;
-  margin-top: 0px;
-}
-
-.App .Home .text-holder .webDesign {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: url("../../img/Web_design.png");
-  background-size: auto 150%;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: -70%;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
-}
-
-.App .Home .text-holder .webDesign div {
-  background: #0000007e;
-  height: 100%;
-}
-
-.App .Home .text-holder .webDesign.active {
-  -webkit-animation: newWindow 1s ease;
-          animation: newWindow 1s ease;
-  margin-top: 0px;
-}
-
-.App .Home .text-holder .skills {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: url("../../img/Skills.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: -70%;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
-}
-
-.App .Home .text-holder .skills div {
-  background: #0000007e;
-  height: 100%;
-}
-
-.App .Home .text-holder .skills.active {
-  -webkit-animation: newWindow 1s ease;
-          animation: newWindow 1s ease;
-  margin-top: 0px;
 }
 
 .App .Home .text-holder h2 {
@@ -276,6 +161,143 @@
 }
 
 .App .Home .text-holder .text {
+  font-size: 18px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.App .Home .text-holder .text.active {
+  -webkit-animation: newWindow 1s ease;
+          animation: newWindow 1s ease;
+  margin-top: 0px;
+}
+
+.App .Home .text-holder-windows {
+  position: relative;
+  width: 50%;
+  background: #000000e5;
+  left: 25%;
+  height: 50vh;
+  border: 8px solid #06634c;
+  -webkit-transition: 2s all ease;
+  transition: 2s all ease;
+  overflow: hidden;
+  margin-bottom: 5%;
+  display: table;
+}
+
+.App .Home .text-holder-windows .electronic {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../../img/Electronic_board.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 0%;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+
+.App .Home .text-holder-windows .electronic div {
+  background: #0000007e;
+  height: 100%;
+}
+
+.App .Home .text-holder-windows .electronic.active {
+  -webkit-animation: newWindow 1s ease;
+          animation: newWindow 1s ease;
+  margin-top: 0%;
+}
+
+.App .Home .text-holder-windows .automation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../../img/Automation_robot.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 0%;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+
+.App .Home .text-holder-windows .automation div {
+  background: #0000007e;
+  height: 100%;
+}
+
+.App .Home .text-holder-windows .automation.active {
+  -webkit-animation: newWindow 1s ease;
+          animation: newWindow 1s ease;
+  margin-top: 0px;
+}
+
+.App .Home .text-holder-windows .webDesign {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../../img/Web_design.png");
+  background-size: auto 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 0%;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+
+.App .Home .text-holder-windows .webDesign div {
+  background: #0000007e;
+  height: 100%;
+}
+
+.App .Home .text-holder-windows .webDesign.active {
+  -webkit-animation: newWindow 1s ease;
+          animation: newWindow 1s ease;
+  margin-top: 0px;
+}
+
+.App .Home .text-holder-windows .skills {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../../img/Skills.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 0%;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+
+.App .Home .text-holder-windows .skills div {
+  background: #0000007e;
+  height: 100%;
+}
+
+.App .Home .text-holder-windows .skills.active {
+  -webkit-animation: newWindow 1s ease;
+          animation: newWindow 1s ease;
+  margin-top: 0px;
+}
+
+.App .Home .text-holder-windows h2 {
+  font-size: 40px;
+  padding: 20px;
+}
+
+.App .Home .text-holder-windows h3 {
+  font-size: 27px;
+  padding: 5px;
+}
+
+.App .Home .text-holder-windows h4 {
+  font-size: 22px;
+  padding: 7px;
+}
+
+.App .Home .text-holder-windows .text {
   font-size: 18px;
   padding: 15px;
   margin-top: 20px;
@@ -478,7 +500,7 @@
 .App .Home .about-holder {
   position: absolute;
   width: 50%;
-  height: 50%;
+  height: 60%;
   background: #000000e5;
   left: 25%;
   top: -25%;
