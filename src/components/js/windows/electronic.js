@@ -14,7 +14,7 @@ export default class Electronic extends Component {
         return(
             <div className={this.props.name}>
                 <div>
-                    <h2>ELECTRONIC PROTOTYPING</h2>
+                    <h2>ELECTRONIC DEVELOPMENT</h2>
                     <h4>IoT</h4>
                     <h4>C++</h4>
                     <h4>Python</h4>

@@ -11,6 +11,9 @@
   .App .Home .text-holder .automation {
     background-size: auto 100%;
   }
+  .App .Home .text-holder .cloud {
+    background-size: auto 100%;
+  }
   .App .Home .text-holder .webDesign {
     background-size: auto 100%;
   }
@@ -58,6 +61,9 @@
     margin-top: -70%;
   }
   .App .Home .text-holder .automation {
+    margin-top: -70%;
+  }
+  .App .Home .text-holder .cloud {
     margin-top: -70%;
   }
   .App .Home .text-holder .webDesign {
@@ -119,6 +125,11 @@
     background-size: auto 100%;
   }
   .App .Home .text-holder .automation {
+    margin-top: -153%;
+    background-position: center;
+    background-size: auto 100%;
+  }
+  .App .Home .text-holder .cloud {
     margin-top: -153%;
     background-position: center;
     background-size: auto 100%;

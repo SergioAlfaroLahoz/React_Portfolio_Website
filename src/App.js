@@ -32,9 +32,10 @@ class App extends Component {
       socialMedia: 'socialMedia-holder active2',
       electronic: 'electronic',
       automation: 'automation',
+      cloud: 'cloud',
       webDesign: 'webDesign',
       skills: 'skills',
-      window: ['circle active', 'circle', 'circle', 'circle', 'circle']
+      window: ['circle active', 'circle', 'circle', 'circle', 'circle', 'circle']
     }
   }
 
@@ -62,9 +63,14 @@ class App extends Component {
     }else if(w===3){
       this.setState({
         automation: 'automation',
-        webDesign: 'webDesign active'
+        cloud: 'cloud active'
       })
     }else if(w===4){
+      this.setState({
+        cloud: 'cloud',
+        webDesign: 'webDesign active'
+      })
+    }else if(w===5){
       this.setState({
         webDesign: 'webDesign',
         skills: 'skills active'
@@ -127,7 +133,7 @@ class App extends Component {
                 <Link to="/About"><h2 className='About'>About</h2></Link>
                 <img className="Sergio" src={Sergio} alt="Sergio"></img>
                 <div className="text-holder">
-                  <Content windowActive={this.state.windowActive} presentation={this.state.presentation} electronic={this.state.electronic} automation={this.state.automation} webDesign={this.state.webDesign} skills={this.state.skills}/>
+                  <Content windowActive={this.state.windowActive} presentation={this.state.presentation} electronic={this.state.electronic} automation={this.state.automation} cloud={this.state.cloud} webDesign={this.state.webDesign} skills={this.state.skills}/>
                 </div>
                 <SocialMedia socialMedia={this.state.socialMedia}/>
                 <div className="navbar">

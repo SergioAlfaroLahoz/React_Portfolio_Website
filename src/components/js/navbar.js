@@ -49,6 +49,7 @@ export default class Navbar extends Component {
                     <FontAwesomeIcon className={this.state.window[2]} icon={faCircle}/>
                     <FontAwesomeIcon className={this.state.window[3]} icon={faCircle}/>
                     <FontAwesomeIcon className={this.state.window[4]} icon={faCircle}/>
+                    <FontAwesomeIcon className={this.state.window[5]} icon={faCircle}/>
                 </div>
 
             </div>
