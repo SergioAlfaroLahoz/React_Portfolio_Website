@@ -1,271 +1,87 @@
 $primary: #06634c
+$primary-opacity: #06634c41
+$blue: #00e1ff
+$blue2: #00aac0
+$primary-blue: #608BAD
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    overflow: hidden
+
+body 
+    color: #ffffff
     
 .App
-    background: url('../../img/Galaxy.jpg')
+    background: #000000
     -webkit-background-size: cover
     -moz-background-size: cover
     -o-background-size: cover
     background-size: cover
     background-attachment: fixed
-    font-family:  'Roboto', 'Oxygen', Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-    font-weight: bold 
+    font-family: 'Lora', 'Roboto', 'Oxygen', Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-weight: 400
+    overflow: hidden
 
     .Start
         justify-content: center
+        background: #000
+        background-size: 100vw auto
+        background-repeat: no-repeat
+        background-position: center
         display: flex
         flex-wrap: wrap
         width: 100%
         height: 100vh
 
-    .Home
-        background: #000000de
-        position: fixed
-        top: 0
-        width: 100%
-        height: 100%
-        text-align: center
-        clip-path: circle(7% at 50% 50%)
-        transition: 2s ease all
-        overflow: hidden
-
-        .home-button1
-            position: absolute
-            width: 10%
-            height: 20%
-            top: 50%
-            left: 50%
-            transform: translate(-50%, -50%)
-            display: grid
-            grid-template-columns: 100%
-            grid-template-rows: 100%
-            justify-items: center
-            align-items: center
-            z-index: 1000
-
-            img 
-                justify-self: center
-                align-self: center
-                width: 70%  //80
-                transition: 1s ease all
-
-        .home-button2
+        .Start2
+            background: #000000c5
             position: fixed
-            width: 10%
-            height: 20%
+            width: 100vw
+            height: 15vh
+            z-index: 1
             top: 0%
-            left: 49%
-            transform: translate(-50%, 0%)
-            display: grid
-            grid-template-columns: 100%
-            grid-template-rows: 100%
-            justify-items: center
-            align-items: center
-            z-index: 1000
+            opacity: 1
 
-            img 
-                justify-self: center
-                align-self: center
-                width: 0%
-                transition: 1s ease all
+            h1
+                position: relative
+                left: 5%
+                line-height: 15vh
+                top: 0%
 
-        .About
-            position: absolute
-            top: 5%
-            right: 5%
-            font-size: 30px
-            color: #ffffff
-            transition: 0s ease all
-
-            &:hover
-                text-decoration-line: underline
-        
         .Sergio
-            position: absolute
+            position: fixed
             width: auto
-            height: 83%
+            height: 87%
             bottom: 0%
-            left: 9%
-            opacity: 0
-            transition: 2.5s all ease
-        
-        .text-holder
-            position: absolute
-            width: 50%
-            background: #000000e5
-            height: 55%
-            left: 100%
-            bottom: 5%
-            border: 8px solid $primary
-            transition: 2s all ease
-            overflow: hidden
-
-            .presentation
-                position: absolute
-                width: 100%
-                margin-top: 0px
-                height: 100%
-                transition: 1s all ease
-
-            h2
-                font-size: 40px
-                padding: 20px
-            
-            h3
-                font-size: 27px
-                padding: 5px
-
-            h4
-                font-size: 22px
-                padding: 7px
-
-            .text
-                font-size: 18px
-                padding: 15px
-                margin-top: 20px
-
-                &.active
-                    animation: newWindow 1s ease
-                    margin-top: 0px
-
-        .text-holder-windows
-            position: relative
-            width: 50%
-            background: #000000e5
-            left: 25%
-            height: 50vh
-            border: 8px solid $primary
-            transition: 2s all ease
-            overflow: hidden
-            margin-bottom: 5%
-            display: table
-
-            .electronic
-                position: absolute
-                width: 100%
-                height: 100%
-                background: url('../../img/Electronic_board.jpg')
-                background-size: 100% auto
-                background-repeat: no-repeat
-                background-position: center
-                margin-top: 0%
-                transition: 1s all ease
-
-                div
-                    background: #0000007e
-                    height: 100%
-
-                &.active
-                    animation: newWindow 1s ease
-                    margin-top: 0%
-
-            .automation
-                position: absolute
-                width: 100%
-                height: 100%
-                background: url('../../img/Automation_robot.jpg')
-                background-size: 100% auto
-                background-repeat: no-repeat
-                background-position: center
-                margin-top: 0%
-                transition: 1s all ease
-
-                div
-                    background: #0000007e
-                    height: 100%
-
-                &.active
-                    animation: newWindow 1s ease
-                    margin-top: 0px
-
-            .webDesign
-                position: absolute
-                width: 100%
-                height: 100%
-                background: url('../../img/Web_design.png')
-                background-size: auto 150%
-                background-repeat: no-repeat
-                background-position: center
-                margin-top: 0%
-                transition: 1s all ease
-
-                div
-                    background: #0000007e
-                    height: 100%
-
-                &.active
-                    animation: newWindow 1s ease
-                    margin-top: 0px
-
-            .skills
-                position: absolute
-                width: 100%
-                height: 100%
-                background: url('../../img/Skills.jpg')
-                background-size: 100% auto
-                background-repeat: no-repeat
-                background-position: center
-                //background-position-y: -30px
-                //background-position-x: 3px
-                margin-top: 0%
-                transition: 1s all ease
-
-                div
-                    background: #0000007e
-                    height: 100%
-
-                &.active
-                    animation: newWindow 1s ease
-                    margin-top: 0px
-
-            h2
-                font-size: 40px
-                padding: 20px
-            
-            h3
-                font-size: 27px
-                padding: 5px
-
-            h4
-                font-size: 22px
-                padding: 7px
-
-            .text
-                font-size: 18px
-                padding: 15px
-                margin-top: 20px
+            left: 6%
+            opacity: 1
+            z-index: 1
+            animation: opacity 2s ease
 
         .socialMedia-holder
-            position: absolute
-            width: 18%
-            bottom: 8%
-            left: 125%
+            position: fixed
+            width: 10%
+            height: 60vh
+            top: 20vh
+            right: -5%
             transform: translate(-50%)
-            z-index: 100
+            z-index: 10
             transition: 2s all ease
-            opacity: 0
-
-            &.active1
-                left: 50%
-
-            &.active2
-                bottom: 8%
-                opacity: 1
-
-            hr
-                width: 100%
-                margin: auto
-                margin-top: 5px
-                border: 0.4px solid
+            opacity: 1
+            display: grid
+            justify-items: center
+            align-items: center
 
             .socialMedia
-                width: 90%
+                width: 50%
+                height: 40vh
                 margin: auto
-                margin-top: 10px
                 padding: 5px
                 display: grid
-                grid-gap: 10%
-                grid-template-columns: 0.5fr 0.5fr 0.5fr
-                grid-template-rows: 1fr
+                grid-template-rows: 0.5fr 0.5fr 0.5fr
+                grid-template-columns: 1fr
                 justify-items: center
                 align-items: center
 
@@ -280,6 +96,290 @@ $primary: #06634c
                     img 
                         object-fit: cover
                         width: 100%
+
+    .Home
+        background: #b9b9b9
+        position: fixed
+        top: 0
+        width: 100vw
+        height: 100vh
+        text-align: center
+        clip-path: circle(7% at 50% 50%)
+        transition: 2s ease all
+        overflow: hidden
+        z-index: 5
+
+        .home-button1
+            position: fixed
+            width: 10%
+            height: 20%
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            display: grid
+            grid-template-columns: 100%
+            grid-template-rows: 100%
+            justify-items: center
+            align-items: center
+            z-index: 11
+
+            img 
+                justify-self: center
+                align-self: center
+                width: 70%  //80
+                transition: 1s ease all
+
+        .home-button2
+            position: fixed
+            width: 10%
+            height: 20%
+            top: 0%
+            left: 49.25%
+            transform: translate(-50%, 0%)
+            display: grid
+            grid-template-columns: 100%
+            grid-template-rows: 100%
+            justify-items: center
+            align-items: center
+            z-index: 11
+
+            img 
+                justify-self: center
+                align-self: center
+                width: 0%
+                transition: 1s ease all
+
+        .About
+            position: fixed
+            top: 5%
+            right: 5%
+            font-size: 30px
+            color: #ffffff
+            transition: 0s ease all
+            z-index: 11
+
+            &:hover
+                text-decoration-line: underline
+
+        .Sergio
+            position: absolute
+            width: auto
+            height: 83%
+            bottom: 0%
+            left: 9%
+            opacity: 0
+            transition: 2.5s all ease
+        
+        .text-holder
+            position: absolute
+            width: 50%
+            height: 50%
+            left: 100%
+            bottom: 20vh
+            // border: 8px solid $primary
+            transition: 0.2s all ease
+            overflow: hidden
+
+            .presentation
+                position: absolute
+                width: 100%
+                margin-top: 2%
+                height: 100%
+                transition: 1s all ease
+
+            h2
+                font-size: 40px
+                padding: 20px
+            
+            h3
+                font-size: 27px
+                padding: 5px
+
+            h4
+                font-size: 22px
+                padding: 7px
+
+            .text
+                font-size: 18px
+                padding: 15px
+                margin-top: 20px
+
+                &.active
+                    animation: newWindow 1s ease
+                    margin-top: 0px
+
+        .windows-content
+            margin-top: 80vh
+            background-size: 100vw auto
+            cursor: auto
+            overflow: auto
+
+            .text-holder-windows
+                position: relative
+                // background: #ffffff
+                // box-shadow: 0px 0px 10px $primary-blue
+                margin: auto
+                height: 500px
+                width: 60vw
+                // border: 8px solid $primary
+                transition: 1.3s all ease
+                overflow: hidden
+                margin-top: 5%
+                margin-bottom: 5%
+                display: table
+
+                .firmware
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    // background: #fff
+                    // background-color: #fff
+                    background-size: 100vw auto
+                    background-repeat: no-repeat
+                    background-position: center
+                    margin-top: 0%
+                    transition: 0.1s all ease
+
+                    div
+                        // background: #afafaf3b
+                        height: 100%
+
+                    &.active
+                        animation: newWindow 1s ease
+                        margin-top: 0%
+
+                .hardware
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    background: #fff
+                    // background-color: #fff
+                    background-size: 100vw auto
+                    background-repeat: no-repeat
+                    background-position: center
+                    margin-top: 0%
+                    transition: 0.1s all ease
+
+                    div
+                        background: #afafaf3b
+                        height: 100%
+
+                    &.active
+                        animation: newWindow 1s ease
+                        margin-top: 0%
+
+                .automation
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    background: #fff
+                    // background-color: #fff
+                    background-size: 100vw auto
+                    background-repeat: no-repeat
+                    background-position: center
+                    margin-top: 0%
+                    transition: 0.1s all ease
+
+                    div
+                        background: #afafaf3b
+                        height: 100%
+
+                    &.active
+                        animation: newWindow 1s ease
+                        margin-top: 0%
+
+                .frontend
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    background: #fff
+                    // background-color: #fff
+                    background-size: 100vw auto
+                    background-repeat: no-repeat
+                    background-position: center
+                    margin-top: 0%
+                    transition: 0.1s all ease
+
+                    div
+                        background: #afafaf3b
+                        height: 100%
+
+                    &.active
+                        animation: newWindow 1s ease
+                        margin-top: 0%
+
+                .backend
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    background: #fff
+                    // background-color: #fff
+                    background-size: 100vw auto
+                    background-repeat: no-repeat
+                    background-position: center
+                    margin-top: 0%
+                    transition: 0.1s all ease
+
+                    div
+                        background: #afafaf3b
+                        height: 100%
+
+                    &.active
+                        animation: newWindow 1s ease
+                        margin-top: 0%
+
+                .skills
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    background: url('../../img/Skills.jpg')
+                    background-size: 100vw auto
+                    background-repeat: no-repeat
+                    background-position: center
+                    //background-position-y: -30px
+                    //background-position-x: 3px
+                    margin-top: 0%
+                    transition: 1s all ease
+
+                    div
+                        background: #0000007e
+                        height: 100%
+
+                    &.active
+                        animation: newWindow 1s ease
+                        margin-top: 0px
+
+                h2
+                    text-align: left
+                    font-size: 40px
+                    padding: 2%
+                    padding-left: 5%
+                    color: $primary-blue
+                
+                h3
+                    text-align: left
+                    font-size: 27px
+                    padding-left: 5%
+                    padding-top: 5%
+                    color: #777777
+
+                h4
+                    text-align: left
+                    font-size: 22px
+                    padding: 1%
+                    padding-left: 5%
+                    color: #ffffff
+
+                img
+                    position: relative
+                    width: 40%
+                    bottom: 70%
+                    right: -5%
+
+                .text
+                    font-size: 18px
+                    padding: 15px
+                    margin-top: 20px
 
         .navbar
             opacity: 0
@@ -339,6 +439,10 @@ $primary: #06634c
         &.active
             clip-path: circle(100% at 50% 50%)
             background: #000
+            // background: url('../../img/background5.jpg')
+            background-size: 100vw auto
+            background-repeat: no-repeat
+            background-position: center
             cursor: auto
             overflow: auto
 
@@ -356,7 +460,7 @@ $primary: #06634c
                     &:hover
                         cursor: pointer
                         width: 70%
-            
+
             .Sergio
                 position: fixed
                 width: auto
@@ -388,7 +492,7 @@ $primary: #06634c
             left: 25%
             top: -25%
             z-index: 10
-            border: 8px solid $primary
+            border: 8px solid $primary-blue
             transition: 2s all ease
             overflow: auto
             animation: down 1s ease

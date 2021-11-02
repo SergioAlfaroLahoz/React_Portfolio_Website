@@ -1,15 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  color: #ffffff;
+}
+
 .App {
-  background: url("../../img/Galaxy.jpg");
+  background: #000000;
   background-size: cover;
   background-attachment: fixed;
-  font-family: 'Roboto', 'Oxygen', Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: bold;
+  font-family: 'Lora', 'Roboto', 'Oxygen', Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  overflow: hidden;
 }
 
 .App .Start {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #000;
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,22 +36,109 @@
   height: 100vh;
 }
 
+.App .Start .Start2 {
+  background: #000000c5;
+  position: fixed;
+  width: 100vw;
+  height: 15vh;
+  z-index: 1;
+  top: 0%;
+  opacity: 1;
+}
+
+.App .Start .Start2 h1 {
+  position: relative;
+  left: 5%;
+  line-height: 15vh;
+  top: 0%;
+}
+
+.App .Start .Sergio {
+  position: fixed;
+  width: auto;
+  height: 87%;
+  bottom: 0%;
+  left: 6%;
+  opacity: 1;
+  z-index: 1;
+  -webkit-animation: opacity 2s ease;
+          animation: opacity 2s ease;
+}
+
+.App .Start .socialMedia-holder {
+  position: fixed;
+  width: 10%;
+  height: 60vh;
+  top: 20vh;
+  right: -5%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: 10;
+  -webkit-transition: 2s all ease;
+  transition: 2s all ease;
+  opacity: 1;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .Start .socialMedia-holder .socialMedia {
+  width: 50%;
+  height: 40vh;
+  margin: auto;
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0.5fr 0.5fr 0.5fr;
+      grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .Start .socialMedia-holder .socialMedia a {
+  width: 100%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.App .Start .socialMedia-holder .socialMedia a:hover {
+  -webkit-animation: rotate 1.5s ease;
+          animation: rotate 1.5s ease;
+}
+
+.App .Start .socialMedia-holder .socialMedia a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
 .App .Home {
-  background: #000000de;
+  background: #b9b9b9;
   position: fixed;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   text-align: center;
   -webkit-clip-path: circle(7% at 50% 50%);
           clip-path: circle(7% at 50% 50%);
   -webkit-transition: 2s ease all;
   transition: 2s ease all;
   overflow: hidden;
+  z-index: 5;
 }
 
 .App .Home .home-button1 {
-  position: absolute;
+  position: fixed;
   width: 10%;
   height: 20%;
   top: 50%;
@@ -51,7 +155,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 1000;
+  z-index: 11;
 }
 
 .App .Home .home-button1 img {
@@ -70,7 +174,7 @@
   width: 10%;
   height: 20%;
   top: 0%;
-  left: 49%;
+  left: 49.25%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
   display: -ms-grid;
@@ -83,7 +187,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 1000;
+  z-index: 11;
 }
 
 .App .Home .home-button2 img {
@@ -98,13 +202,14 @@
 }
 
 .App .Home .About {
-  position: absolute;
+  position: fixed;
   top: 5%;
   right: 5%;
   font-size: 30px;
   color: #ffffff;
   -webkit-transition: 0s ease all;
   transition: 0s ease all;
+  z-index: 11;
 }
 
 .App .Home .About:hover {
@@ -126,20 +231,18 @@
 .App .Home .text-holder {
   position: absolute;
   width: 50%;
-  background: #000000e5;
-  height: 55%;
+  height: 50%;
   left: 100%;
-  bottom: 5%;
-  border: 8px solid #06634c;
-  -webkit-transition: 2s all ease;
-  transition: 2s all ease;
+  bottom: 20vh;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
   overflow: hidden;
 }
 
 .App .Home .text-holder .presentation {
   position: absolute;
   width: 100%;
-  margin-top: 0px;
+  margin-top: 2%;
   height: 100%;
   -webkit-transition: 1s all ease;
   transition: 1s all ease;
@@ -172,98 +275,150 @@
   margin-top: 0px;
 }
 
-.App .Home .text-holder-windows {
+.App .Home .windows-content {
+  margin-top: 80vh;
+  background-size: 100vw auto;
+  cursor: auto;
+  overflow: auto;
+}
+
+.App .Home .windows-content .text-holder-windows {
   position: relative;
-  width: 50%;
-  background: #000000e5;
-  left: 25%;
-  height: 50vh;
-  border: 8px solid #06634c;
-  -webkit-transition: 2s all ease;
-  transition: 2s all ease;
+  margin: auto;
+  height: 500px;
+  width: 60vw;
+  -webkit-transition: 1.3s all ease;
+  transition: 1.3s all ease;
   overflow: hidden;
+  margin-top: 5%;
   margin-bottom: 5%;
   display: table;
 }
 
-.App .Home .text-holder-windows .electronic {
+.App .Home .windows-content .text-holder-windows .firmware {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../../img/Electronic_board.jpg");
-  background-size: 100% auto;
+  background-size: 100vw auto;
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 0%;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
+  -webkit-transition: 0.1s all ease;
+  transition: 0.1s all ease;
 }
 
-.App .Home .text-holder-windows .electronic div {
-  background: #0000007e;
+.App .Home .windows-content .text-holder-windows .firmware div {
   height: 100%;
 }
 
-.App .Home .text-holder-windows .electronic.active {
+.App .Home .windows-content .text-holder-windows .firmware.active {
   -webkit-animation: newWindow 1s ease;
           animation: newWindow 1s ease;
   margin-top: 0%;
 }
 
-.App .Home .text-holder-windows .automation {
+.App .Home .windows-content .text-holder-windows .hardware {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../../img/Automation_robot.jpg");
-  background-size: 100% auto;
+  background: #fff;
+  background-size: 100vw auto;
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 0%;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
+  -webkit-transition: 0.1s all ease;
+  transition: 0.1s all ease;
 }
 
-.App .Home .text-holder-windows .automation div {
-  background: #0000007e;
+.App .Home .windows-content .text-holder-windows .hardware div {
+  background: #afafaf3b;
   height: 100%;
 }
 
-.App .Home .text-holder-windows .automation.active {
+.App .Home .windows-content .text-holder-windows .hardware.active {
   -webkit-animation: newWindow 1s ease;
           animation: newWindow 1s ease;
-  margin-top: 0px;
+  margin-top: 0%;
 }
 
-.App .Home .text-holder-windows .webDesign {
+.App .Home .windows-content .text-holder-windows .automation {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../../img/Web_design.png");
-  background-size: auto 150%;
+  background: #fff;
+  background-size: 100vw auto;
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 0%;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
+  -webkit-transition: 0.1s all ease;
+  transition: 0.1s all ease;
 }
 
-.App .Home .text-holder-windows .webDesign div {
-  background: #0000007e;
+.App .Home .windows-content .text-holder-windows .automation div {
+  background: #afafaf3b;
   height: 100%;
 }
 
-.App .Home .text-holder-windows .webDesign.active {
+.App .Home .windows-content .text-holder-windows .automation.active {
   -webkit-animation: newWindow 1s ease;
           animation: newWindow 1s ease;
-  margin-top: 0px;
+  margin-top: 0%;
 }
 
-.App .Home .text-holder-windows .skills {
+.App .Home .windows-content .text-holder-windows .frontend {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 0%;
+  -webkit-transition: 0.1s all ease;
+  transition: 0.1s all ease;
+}
+
+.App .Home .windows-content .text-holder-windows .frontend div {
+  background: #afafaf3b;
+  height: 100%;
+}
+
+.App .Home .windows-content .text-holder-windows .frontend.active {
+  -webkit-animation: newWindow 1s ease;
+          animation: newWindow 1s ease;
+  margin-top: 0%;
+}
+
+.App .Home .windows-content .text-holder-windows .backend {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 0%;
+  -webkit-transition: 0.1s all ease;
+  transition: 0.1s all ease;
+}
+
+.App .Home .windows-content .text-holder-windows .backend div {
+  background: #afafaf3b;
+  height: 100%;
+}
+
+.App .Home .windows-content .text-holder-windows .backend.active {
+  -webkit-animation: newWindow 1s ease;
+          animation: newWindow 1s ease;
+  margin-top: 0%;
+}
+
+.App .Home .windows-content .text-holder-windows .skills {
   position: absolute;
   width: 100%;
   height: 100%;
   background: url("../../img/Skills.jpg");
-  background-size: 100% auto;
+  background-size: 100vw auto;
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 0%;
@@ -271,103 +426,52 @@
   transition: 1s all ease;
 }
 
-.App .Home .text-holder-windows .skills div {
+.App .Home .windows-content .text-holder-windows .skills div {
   background: #0000007e;
   height: 100%;
 }
 
-.App .Home .text-holder-windows .skills.active {
+.App .Home .windows-content .text-holder-windows .skills.active {
   -webkit-animation: newWindow 1s ease;
           animation: newWindow 1s ease;
   margin-top: 0px;
 }
 
-.App .Home .text-holder-windows h2 {
+.App .Home .windows-content .text-holder-windows h2 {
+  text-align: left;
   font-size: 40px;
-  padding: 20px;
+  padding: 2%;
+  padding-left: 5%;
+  color: #608BAD;
 }
 
-.App .Home .text-holder-windows h3 {
+.App .Home .windows-content .text-holder-windows h3 {
+  text-align: left;
   font-size: 27px;
-  padding: 5px;
+  padding-left: 5%;
+  padding-top: 5%;
+  color: #777777;
 }
 
-.App .Home .text-holder-windows h4 {
+.App .Home .windows-content .text-holder-windows h4 {
+  text-align: left;
   font-size: 22px;
-  padding: 7px;
+  padding: 1%;
+  padding-left: 5%;
+  color: #ffffff;
 }
 
-.App .Home .text-holder-windows .text {
+.App .Home .windows-content .text-holder-windows img {
+  position: relative;
+  width: 40%;
+  bottom: 70%;
+  right: -5%;
+}
+
+.App .Home .windows-content .text-holder-windows .text {
   font-size: 18px;
   padding: 15px;
   margin-top: 20px;
-}
-
-.App .Home .socialMedia-holder {
-  position: absolute;
-  width: 18%;
-  bottom: 8%;
-  left: 125%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  z-index: 100;
-  -webkit-transition: 2s all ease;
-  transition: 2s all ease;
-  opacity: 0;
-}
-
-.App .Home .socialMedia-holder.active1 {
-  left: 50%;
-}
-
-.App .Home .socialMedia-holder.active2 {
-  bottom: 8%;
-  opacity: 1;
-}
-
-.App .Home .socialMedia-holder hr {
-  width: 100%;
-  margin: auto;
-  margin-top: 5px;
-  border: 0.4px solid;
-}
-
-.App .Home .socialMedia-holder .socialMedia {
-  width: 90%;
-  margin: auto;
-  margin-top: 10px;
-  padding: 5px;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 10%;
-  -ms-grid-columns: 0.5fr 0.5fr 0.5fr;
-      grid-template-columns: 0.5fr 0.5fr 0.5fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.App .Home .socialMedia-holder .socialMedia a {
-  width: 100%;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.App .Home .socialMedia-holder .socialMedia a:hover {
-  -webkit-animation: rotate 1.5s ease;
-          animation: rotate 1.5s ease;
-}
-
-.App .Home .socialMedia-holder .socialMedia a img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
 }
 
 .App .Home .navbar {
@@ -446,6 +550,9 @@
   -webkit-clip-path: circle(100% at 50% 50%);
           clip-path: circle(100% at 50% 50%);
   background: #000;
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  background-position: center;
   cursor: auto;
   overflow: auto;
 }
@@ -505,7 +612,7 @@
   left: 25%;
   top: -25%;
   z-index: 10;
-  border: 8px solid #06634c;
+  border: 8px solid #608BAD;
   -webkit-transition: 2s all ease;
   transition: 2s all ease;
   overflow: auto;

@@ -5,7 +5,7 @@
   .App .Home .text-holder .presentation {
     background-size: auto 100%;
   }
-  .App .Home .text-holder .electronic {
+  .App .Home .text-holder .hardware {
     background-size: 100% auto;
   }
   .App .Home .text-holder .automation {
@@ -54,7 +54,7 @@
   .App .Home .text-holder .presentation {
     margin-top: -70%;
   }
-  .App .Home .text-holder .electronic {
+  .App .Home .text-holder .hardware {
     margin-top: -70%;
   }
   .App .Home .text-holder .automation {
@@ -80,6 +80,9 @@
 }
 
 @media screen and (max-width: 800px) {
+  body h1 {
+    font-size: 150%;
+  }
   .App .Home {
     -webkit-clip-path: circle(20% at 50% 50%);
             clip-path: circle(20% at 50% 50%);
@@ -114,7 +117,7 @@
     margin-top: -153%;
     background-size: 100% auto;
   }
-  .App .Home .text-holder .electronic {
+  .App .Home .text-holder .hardware {
     margin-top: -153%;
     background-size: auto 100%;
   }

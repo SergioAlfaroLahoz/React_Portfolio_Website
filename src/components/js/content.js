@@ -2,9 +2,11 @@ import React, {Component} from 'react';
 
 //Components
 import Presentation from './windows/presentation';
-import Electronic from './windows/electronic';
+import Firmware from './windows/firmware';
+import Hardware from './windows/hardware';
 import Automation from './windows/automation';
-import WebDesign from './windows/webDesign';
+import Frontend from './windows/frontend';
+import Backend from './windows/backend';
 import Skills from './windows/skills';
 
 
@@ -20,20 +22,28 @@ export default class Content extends Component {
     render(){
         return(
             <div>
-                <div className="text-holder">
+                <div className="text-holder" id="presentation-holder">
                     <Presentation name={this.props.presentation}/>
                 </div>
-                <div className="text-holder-windows">
-                    <Electronic name={this.props.electronic}/>
-                </div>
-                <div className="text-holder-windows">
-                    <Automation name={this.props.automation}/>
-                </div>
-                <div className="text-holder-windows">
-                    <WebDesign name={this.props.webDesign}/>
-                </div>
-                <div className="text-holder-windows">
-                    <Skills name={this.props.skills}/>
+                <div className="windows-content">
+                    <div className="text-holder-windows" id="firmware-holder">
+                        <Firmware name={this.props.firmware}/>
+                    </div>
+                    <div className="text-holder-windows" id="hardware-holder">
+                        <Hardware name={this.props.hardware}/>
+                    </div>
+                    <div className="text-holder-windows" id="backend-holder">
+                        <Backend name={this.props.backend}/>
+                    </div>
+                    <div className="text-holder-windows" id="frontend-holder">
+                        <Frontend name={this.props.frontend}/>
+                    </div>
+                    <div className="text-holder-windows" id="automation-holder">
+                        <Automation name={this.props.automation}/>
+                    </div>
+                    <div className="text-holder-windows" id="skills-holder">
+                        <Skills name={this.props.skills}/>
+                    </div>
                 </div>
             </div>
         );

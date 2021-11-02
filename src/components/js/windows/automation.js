@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+import automationImg from '../../img/automation.png'
 
 export default class Automation extends Component {
 
@@ -19,6 +20,7 @@ export default class Automation extends Component {
                     <h4>PLCs</h4>
                     <h4>Control & Systems Simulation</h4>
                     <h4>Matlab</h4>
+                    <img src={automationImg} alt="Automation"/>
                 </div>
             </div>    
         );

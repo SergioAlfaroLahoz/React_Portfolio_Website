@@ -6,6 +6,7 @@ export default class Paticlesc extends Component {
         return (  
             <div>
                 <Particles 
+                  height={window.outerHeight}
                   params={{ 
                     "particles": {
                       "number": {
@@ -16,13 +17,13 @@ export default class Paticlesc extends Component {
                         }
                       },
                       "color": {
-                        "value": "#ffffff"
+                        "value": "#00e1ff"
                       },
                       "shape": {
                         "type": "circle",
                         "stroke": {
                           "width": 0,
-                          "color": "#ffffff"
+                          "color": "#00e1ff"
                         },
                         "polygon": {
                           "nb_sides": 5
@@ -56,7 +57,7 @@ export default class Paticlesc extends Component {
                       "line_linked": {
                         "enable": true,
                         "distance": 120,
-                        "color": "#ffffff",
+                        "color": "#00aac0",
                         "opacity": 0.4,
                         "width": 1
                       },
