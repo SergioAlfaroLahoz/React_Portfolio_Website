@@ -1,28 +1,34 @@
 {
   "files": {
-    "main.css": "/React_Portfolio_Website/static/css/main.87003150.chunk.css",
-    "main.js": "/React_Portfolio_Website/static/js/main.49947fb0.chunk.js",
-    "main.js.map": "/React_Portfolio_Website/static/js/main.49947fb0.chunk.js.map",
+    "main.css": "/React_Portfolio_Website/static/css/main.ea669eb5.chunk.css",
+    "main.js": "/React_Portfolio_Website/static/js/main.6cbae0d1.chunk.js",
+    "main.js.map": "/React_Portfolio_Website/static/js/main.6cbae0d1.chunk.js.map",
     "runtime-main.js": "/React_Portfolio_Website/static/js/runtime-main.7d7a3011.js",
     "runtime-main.js.map": "/React_Portfolio_Website/static/js/runtime-main.7d7a3011.js.map",
-    "static/js/2.70c08229.chunk.js": "/React_Portfolio_Website/static/js/2.70c08229.chunk.js",
-    "static/js/2.70c08229.chunk.js.map": "/React_Portfolio_Website/static/js/2.70c08229.chunk.js.map",
+    "static/js/2.0c9de540.chunk.js": "/React_Portfolio_Website/static/js/2.0c9de540.chunk.js",
+    "static/js/2.0c9de540.chunk.js.map": "/React_Portfolio_Website/static/js/2.0c9de540.chunk.js.map",
     "index.html": "/React_Portfolio_Website/index.html",
-    "precache-manifest.997776f9f2a4e3430a6bc5cd0208d610.js": "/React_Portfolio_Website/precache-manifest.997776f9f2a4e3430a6bc5cd0208d610.js",
+    "precache-manifest.68631043189ef6fca0bc3dc0d538209c.js": "/React_Portfolio_Website/precache-manifest.68631043189ef6fca0bc3dc0d538209c.js",
     "service-worker.js": "/React_Portfolio_Website/service-worker.js",
-    "static/css/main.87003150.chunk.css.map": "/React_Portfolio_Website/static/css/main.87003150.chunk.css.map",
-    "static/js/2.70c08229.chunk.js.LICENSE.txt": "/React_Portfolio_Website/static/js/2.70c08229.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/React_Portfolio_Website/static/media/Web_design.89bbb8fe.png",
-    "static/media/Brain.png": "/React_Portfolio_Website/static/media/Brain.50160c65.png",
-    "static/media/GitHub.png": "/React_Portfolio_Website/static/media/GitHub.6b22b2cf.png",
-    "static/media/Gmail.png": "/React_Portfolio_Website/static/media/Gmail.5ae28da9.png",
-    "static/media/LinkedIn.png": "/React_Portfolio_Website/static/media/LinkedIn.32a9fda6.png",
-    "static/media/Sergio_Without_Background.png": "/React_Portfolio_Website/static/media/Sergio_Without_Background.16c2ce83.png"
+    "static/css/main.ea669eb5.chunk.css.map": "/React_Portfolio_Website/static/css/main.ea669eb5.chunk.css.map",
+    "static/js/2.0c9de540.chunk.js.LICENSE.txt": "/React_Portfolio_Website/static/js/2.0c9de540.chunk.js.LICENSE.txt",
+    "static/media/Artificial_intelligence.png": "/React_Portfolio_Website/static/media/Artificial_intelligence.4ee9c3f9.png",
+    "static/media/Automation.png": "/React_Portfolio_Website/static/media/Automation.01598e59.png",
+    "static/media/Backend.png": "/React_Portfolio_Website/static/media/Backend.7e314706.png",
+    "static/media/Brain_blue.png": "/React_Portfolio_Website/static/media/Brain_blue.feca6090.png",
+    "static/media/Firmware.png": "/React_Portfolio_Website/static/media/Firmware.6b09daa3.png",
+    "static/media/Frontend.png": "/React_Portfolio_Website/static/media/Frontend.81dc9487.png",
+    "static/media/GitHub_blue.png": "/React_Portfolio_Website/static/media/GitHub_blue.3b211acf.png",
+    "static/media/Gmail_blue.png": "/React_Portfolio_Website/static/media/Gmail_blue.27d4ec4e.png",
+    "static/media/Idea.png": "/React_Portfolio_Website/static/media/Idea.0403ff9e.png",
+    "static/media/LinkedIn_blue.png": "/React_Portfolio_Website/static/media/LinkedIn_blue.aff6bf26.png",
+    "static/media/Sergio_Without_Background_BW.png": "/React_Portfolio_Website/static/media/Sergio_Without_Background_BW.c56ed6c8.png",
+    "static/media/pcb.png": "/React_Portfolio_Website/static/media/pcb.93b893d9.png"
   },
   "entrypoints": [
     "static/js/runtime-main.7d7a3011.js",
-    "static/js/2.70c08229.chunk.js",
-    "static/css/main.87003150.chunk.css",
-    "static/js/main.49947fb0.chunk.js"
+    "static/js/2.0c9de540.chunk.js",
+    "static/css/main.ea669eb5.chunk.css",
+    "static/js/main.6cbae0d1.chunk.js"
   ]
 }
