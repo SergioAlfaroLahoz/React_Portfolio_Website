@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 //Pictures
-import GitHub from '../img/GitHub.png';
+import GitHub from '../img/GitHub_blue.png';
 
 export default class About extends Component {
     render(){

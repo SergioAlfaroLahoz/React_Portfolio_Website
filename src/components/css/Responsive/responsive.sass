@@ -1,82 +1,46 @@
 //Responsive Design
 
-@media screen and (min-height: 785px)
-    .App
-        .Home
+// @media screen and (min-height: 785px)
 
-            .text-holder
-                width: 50%
-                .presentation
-                    background-size: auto 100%
-                .hardware
-                    background-size: 100% auto
-                .automation
-                    background-size: auto 100%
-                .webDesign
-                    background-size: auto 100%
-                .skills
-                    background-size: auto 100%
-
-            .navbar
-                left: 69%
-
-            &.active 
-                .text-holder
-                    left: 50%
-                    transform: translate(-50%, 0%)
-                .Sergio
-                    left: 0%
-
-@media screen and (max-width: 1400px)
-    .App
-        .Home
-
-            .text-holder
-                width: 60%
-
-            .navbar
-                left: 69%
-
-            &.active 
-                .text-holder
-                    left: 50%
-                    transform: translate(-50%, 0%)
-                .Sergio
-                    left: 0%
+// @media screen and (max-width: 1200px)
 
 @media screen and (max-width: 1200px)
+    body
+
     .App
+
         .Home
 
-            .text-holder
-                width: 75%
-                .presentation
-                    margin-top: -70%
-                .hardware
-                    margin-top: -70%
-                .automation
-                    margin-top: -70%
-                .webDesign
-                    margin-top: -70%
-                .skills
-                    margin-top: -70%
+            &.active
 
-            .navbar
-                left: 75%
-
-            &.active 
-                .text-holder
-                    left: 50%
-                    transform: translate(-50%, 0%)
                 .Sergio
-                    left: -10%
+                    height: 65%
 
 //Mobile
-@media screen and (max-width: 800px)
+@media screen and (max-width: 900px)
     body 
-        h1 
-            font-size: 150%
+
     .App
+
+        .Start
+
+            .socialMedia-holder
+                width: 100%
+                height: 10vh
+                top: 88vh
+                transform: translate(0%)
+                right: 0%
+
+                .socialMedia
+                    width: 70%
+                    height: 10vh
+                    grid-template-rows: 1fr
+                    grid-template-columns: 1fr 1fr 1fr
+                    grid-column-gap: 10%
+
+                    a
+                        width: 80%
+
         .Home
             clip-path: circle(20% at 50% 50%)
 
@@ -94,108 +58,84 @@
                 width: 30%
                 height: 15%
 
+            .About
+                font-size: 22px
+                right: 10%
+
             .Sergio
                 width: 100%
                 height: auto
-                left: -30%
+                left: -20%
 
-            .text-holder
-                width: 75%
-                height: 52%
-                bottom: 33%
-                z-index: 10
+            .windows-content
 
-                .presentation
-                    margin-top: -153%
-                    background-size: 100% auto
+                section
+                    width: 100vw
+                    margin-top: 20vh
 
-                    &.active
-                        
-                
-                .hardware
-                    margin-top: -153%
-                    background-size: auto 100%
+                    section
 
-                    &.active
-                
+                    h2
+                        font-size: 30px
+
+                    h3
+                        font-size: 15px
+
+                    h4
+                        font-size: 15px
+
+                .presentation-holder
+
+                    .presentation
+                        top: 10vh
+                        width: 85%
+
+                    h3 
+                        font-size: 18px
+
+                .text-holder-windows-left
+
+                    img
+                        height: 25vh
+                        left: 40%
+                        top: 7%
+
+                .text-holder-windows-right
+                    margin-top: 55vh
+
+                    img
+                        height: 25vh
+                        right: 40%
+                        top: 5%
+
                 .automation
-                    margin-top: -153%
-                    background-position: center
-                    background-size: auto 100%
+                    
+                    img
+                        top: 12%
+                        left: 47%
 
-                    &.active
+                .computerVision
 
-                .webDesign
-                    margin-top: -153%
-                    background-size: auto 100% 
-
-                    &.active
+                    img 
+                        top: 2%
+                        right: 47%
 
                 .skills
-                    margin-top: -153%
-                    background-size: auto 100%
 
-                    &.active
+                    img
+                        top: 11%
+                        left: 30%
 
-                h2 
-                    font-size: 170%
-                    padding: 2.5%
+                .navbar-holder
+                    width: 20vw
+                    margin-top: 0%
 
-                h3 
-                    font-size: 130%
-                    padding: 0.5%
+                    .navbar
+                        top: 0%
 
-                h4 
-                    font-size: 100%
-                    padding: 2%
-                    width: 70%
-                    transform: translate(20%, 0%)
-                    
-                .text
-                    width: 60%
-                    margin: auto
-                    font-size: 80%
-
-
-            .socialMedia-holder
-                width: 40%
-                bottom: 38%
-
-                &.active2
-                    bottom: 38%
-
-                hr 
-                    margin-top: -5%
-
-                .socialMedia
-                    width: 100%
-                    grid-gap: 10%
-                    z-index: 1000
-
-            .navbar
-                width: 15%
-                left: 86%
-                height: 55%
-                bottom: 30%
-
-                .icons-holder
-                    grid-template-columns: 1fr
-                    grid-template-rows: 1fr 1fr
-
-                    .arrow-holder
-                        width: 200%
-                        position: absolute
-                        justify-self: center
-                        grid-row-start: 2
-                        grid-row-end: 3
-                        top: 102%
-                        left: -160%
-
-                        .arrow
-
-                    .circle-holder
-                        grid-row-start: 1
-                        grid-row-end: 2
+                        hr
+                            margin-top: 20px
+                            margin-bottom: 20px
 
             &.active
 
@@ -205,8 +145,7 @@
                 .Sergio
                     width: 90%
                     height: auto
-                    left: -25%
-                    z-index: 100
+                    left: -20%
                     bottom: -3%
 
                 .text-holder
@@ -220,9 +159,9 @@
 
             .about-holder
                 width: 80%
+                height: 50vh
                 margin: auto
                 left: 10%
-                z-index: 1000
 
                 .arrowDown
                     width: 15%
@@ -236,6 +175,10 @@
                 a 
                     img 
                         width: 25%
+
+            .Back
+                font-size: 22px
+                right: 10%
 
 @keyframes appear-text
 0%

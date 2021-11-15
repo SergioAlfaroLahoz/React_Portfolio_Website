@@ -17,13 +17,13 @@ export default class Paticlesc extends Component {
                         }
                       },
                       "color": {
-                        "value": "#00e1ff"
+                        "value": "#2ce5fc"
                       },
                       "shape": {
                         "type": "circle",
                         "stroke": {
                           "width": 0,
-                          "color": "#00e1ff"
+                          "color": "#2ce5fc"
                         },
                         "polygon": {
                           "nb_sides": 5
@@ -57,7 +57,7 @@ export default class Paticlesc extends Component {
                       "line_linked": {
                         "enable": true,
                         "distance": 120,
-                        "color": "#00aac0",
+                        "color": "#2ce5fc",
                         "opacity": 0.4,
                         "width": 1
                       },

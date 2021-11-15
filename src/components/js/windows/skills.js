@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+import ideaImg from '../../img/Idea.png'
 
 export default class Skills extends Component {
 
@@ -14,12 +15,14 @@ export default class Skills extends Component {
         return(
             <div className={this.props.name}>
                 <div>
+                    <h3>ATTITUDES</h3>
                     <h2>PERSONAL SKILLS</h2>
                     <h4>Creativity</h4>
                     <h4>Self-learning</h4>
                     <h4>Proactivity</h4>
                     <h4>Teamwork</h4>
                     <h4>Curiosity</h4>
+                    <img src={ideaImg} alt="idea"/>
                 </div>
             </div>    
         );

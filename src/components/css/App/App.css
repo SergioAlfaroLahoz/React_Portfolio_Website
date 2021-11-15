@@ -11,7 +11,7 @@ body {
 }
 
 .App {
-  background: #000000;
+  background: #000;
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Lora', 'Roboto', 'Oxygen', Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -20,60 +20,21 @@ body {
 }
 
 .App .Start {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #000;
-  background-size: 100vw auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
-.App .Start .Start2 {
-  background: #000000c5;
-  position: fixed;
-  width: 100vw;
-  height: 15vh;
-  z-index: 1;
-  top: 0%;
-  opacity: 1;
-}
-
-.App .Start .Start2 h1 {
-  position: relative;
-  left: 5%;
-  line-height: 15vh;
-  top: 0%;
-}
-
-.App .Start .Sergio {
-  position: fixed;
-  width: auto;
-  height: 87%;
-  bottom: 0%;
-  left: 6%;
-  opacity: 1;
-  z-index: 1;
-  -webkit-animation: opacity 2s ease;
-          animation: opacity 2s ease;
-}
-
 .App .Start .socialMedia-holder {
-  position: fixed;
+  position: absolute;
   width: 10%;
   height: 60vh;
   top: 20vh;
   right: -5%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  z-index: 10;
+  z-index: 11;
   -webkit-transition: 2s all ease;
   transition: 2s all ease;
   opacity: 1;
@@ -96,10 +57,6 @@ body {
       grid-template-rows: 0.5fr 0.5fr 0.5fr;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .App .Start .socialMedia-holder .socialMedia a {
@@ -151,11 +108,9 @@ body {
       grid-template-columns: 100%;
   -ms-grid-rows: 100%;
       grid-template-rows: 100%;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 11;
+  z-index: 50;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
 }
 
 .App .Home .home-button1 img {
@@ -183,11 +138,7 @@ body {
       grid-template-columns: 100%;
   -ms-grid-rows: 100%;
       grid-template-rows: 100%;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 11;
+  z-index: 50;
 }
 
 .App .Home .home-button2 img {
@@ -218,242 +169,75 @@ body {
 }
 
 .App .Home .Sergio {
-  position: absolute;
+  position: fixed;
   width: auto;
   height: 83%;
   bottom: 0%;
-  left: 9%;
+  left: 0%;
   opacity: 0;
   -webkit-transition: 2.5s all ease;
   transition: 2.5s all ease;
 }
 
-.App .Home .text-holder {
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  left: 100%;
-  bottom: 20vh;
-  -webkit-transition: 0.2s all ease;
-  transition: 0.2s all ease;
-  overflow: hidden;
-}
-
-.App .Home .text-holder .presentation {
-  position: absolute;
-  width: 100%;
-  margin-top: 2%;
-  height: 100%;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
-}
-
-.App .Home .text-holder h2 {
-  font-size: 40px;
-  padding: 20px;
-}
-
-.App .Home .text-holder h3 {
-  font-size: 27px;
-  padding: 5px;
-}
-
-.App .Home .text-holder h4 {
-  font-size: 22px;
-  padding: 7px;
-}
-
-.App .Home .text-holder .text {
-  font-size: 18px;
-  padding: 15px;
-  margin-top: 20px;
-}
-
-.App .Home .text-holder .text.active {
-  -webkit-animation: newWindow 1s ease;
-          animation: newWindow 1s ease;
-  margin-top: 0px;
-}
-
 .App .Home .windows-content {
-  margin-top: 80vh;
-  background-size: 100vw auto;
-  cursor: auto;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
   overflow: auto;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
-.App .Home .windows-content .text-holder-windows {
+.App .Home .windows-content section {
+  opacity: 0;
   position: relative;
   margin: auto;
-  height: 500px;
-  width: 60vw;
-  -webkit-transition: 1.3s all ease;
-  transition: 1.3s all ease;
-  overflow: hidden;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  height: 100vh;
+  width: 75vw;
   display: table;
+  scroll-snap-align: center;
+  -webkit-transition: 1.5s all ease;
+  transition: 1.5s all ease;
 }
 
-.App .Home .windows-content .text-holder-windows .firmware {
+.App .Home .windows-content section section {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  overflow: visible;
+}
+
+.App .Home .windows-content section section div {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-size: 100vw auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 0%;
-  -webkit-transition: 0.1s all ease;
-  transition: 0.1s all ease;
 }
 
-.App .Home .windows-content .text-holder-windows .firmware div {
+.App .Home .windows-content section section div div {
   height: 100%;
 }
 
-.App .Home .windows-content .text-holder-windows .firmware.active {
-  -webkit-animation: newWindow 1s ease;
-          animation: newWindow 1s ease;
-  margin-top: 0%;
-}
-
-.App .Home .windows-content .text-holder-windows .hardware {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  background-size: 100vw auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 0%;
-  -webkit-transition: 0.1s all ease;
-  transition: 0.1s all ease;
-}
-
-.App .Home .windows-content .text-holder-windows .hardware div {
-  background: #afafaf3b;
-  height: 100%;
-}
-
-.App .Home .windows-content .text-holder-windows .hardware.active {
-  -webkit-animation: newWindow 1s ease;
-          animation: newWindow 1s ease;
-  margin-top: 0%;
-}
-
-.App .Home .windows-content .text-holder-windows .automation {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  background-size: 100vw auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 0%;
-  -webkit-transition: 0.1s all ease;
-  transition: 0.1s all ease;
-}
-
-.App .Home .windows-content .text-holder-windows .automation div {
-  background: #afafaf3b;
-  height: 100%;
-}
-
-.App .Home .windows-content .text-holder-windows .automation.active {
-  -webkit-animation: newWindow 1s ease;
-          animation: newWindow 1s ease;
-  margin-top: 0%;
-}
-
-.App .Home .windows-content .text-holder-windows .frontend {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  background-size: 100vw auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 0%;
-  -webkit-transition: 0.1s all ease;
-  transition: 0.1s all ease;
-}
-
-.App .Home .windows-content .text-holder-windows .frontend div {
-  background: #afafaf3b;
-  height: 100%;
-}
-
-.App .Home .windows-content .text-holder-windows .frontend.active {
-  -webkit-animation: newWindow 1s ease;
-          animation: newWindow 1s ease;
-  margin-top: 0%;
-}
-
-.App .Home .windows-content .text-holder-windows .backend {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  background-size: 100vw auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 0%;
-  -webkit-transition: 0.1s all ease;
-  transition: 0.1s all ease;
-}
-
-.App .Home .windows-content .text-holder-windows .backend div {
-  background: #afafaf3b;
-  height: 100%;
-}
-
-.App .Home .windows-content .text-holder-windows .backend.active {
-  -webkit-animation: newWindow 1s ease;
-          animation: newWindow 1s ease;
-  margin-top: 0%;
-}
-
-.App .Home .windows-content .text-holder-windows .skills {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: url("../../img/Skills.jpg");
-  background-size: 100vw auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 0%;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
-}
-
-.App .Home .windows-content .text-holder-windows .skills div {
-  background: #0000007e;
-  height: 100%;
-}
-
-.App .Home .windows-content .text-holder-windows .skills.active {
-  -webkit-animation: newWindow 1s ease;
-          animation: newWindow 1s ease;
-  margin-top: 0px;
-}
-
-.App .Home .windows-content .text-holder-windows h2 {
+.App .Home .windows-content section h2 {
+  position: relative;
   text-align: left;
-  font-size: 40px;
+  font-size: 50px;
   padding: 2%;
   padding-left: 5%;
-  color: #608BAD;
+  color: #42b5db;
+  z-index: 9;
 }
 
-.App .Home .windows-content .text-holder-windows h3 {
+.App .Home .windows-content section h3 {
   text-align: left;
-  font-size: 27px;
+  font-size: 23px;
   padding-left: 5%;
-  padding-top: 5%;
-  color: #777777;
+  padding-top: 6%;
+  color: #a3a3a3;
+  z-index: 9;
 }
 
-.App .Home .windows-content .text-holder-windows h4 {
+.App .Home .windows-content section h4 {
   text-align: left;
   font-size: 22px;
   padding: 1%;
@@ -461,79 +245,119 @@ body {
   color: #ffffff;
 }
 
-.App .Home .windows-content .text-holder-windows img {
-  position: relative;
-  width: 40%;
-  bottom: 70%;
-  right: -5%;
+.App .Home .windows-content section.active .text-holder-windows-left {
+  left: 0%;
+  opacity: 1;
 }
 
-.App .Home .windows-content .text-holder-windows .text {
-  font-size: 18px;
-  padding: 15px;
-  margin-top: 20px;
+.App .Home .windows-content section.active .text-holder-windows-left img {
+  opacity: 1;
+  -webkit-animation: imgAppear 3s ease;
+          animation: imgAppear 3s ease;
 }
 
-.App .Home .navbar {
-  opacity: 0;
-  width: 10%;
-  height: 55%;
+.App .Home .windows-content section.active .text-holder-windows-right {
+  right: 0%;
+  opacity: 1;
+}
+
+.App .Home .windows-content section.active .text-holder-windows-right img {
+  opacity: 1;
+  -webkit-animation: imgAppear 3s ease;
+          animation: imgAppear 3s ease;
+}
+
+.App .Home .windows-content .presentation-holder {
+  margin-top: 0%;
+}
+
+.App .Home .windows-content .presentation-holder .presentation {
   position: absolute;
-  left: 65%;
-  bottom: 5%;
-  z-index: 100;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+  margin-top: -10%;
+  width: 60%;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: 2s all ease;
+  transition: 2s all ease;
 }
 
-.App .Home .navbar .icons-holder {
-  width: 100%;
-  height: 400px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.App .Home .windows-content .presentation-holder h3 {
+  text-align: center;
+  font-size: 27px;
+  padding: 5px;
 }
 
-.App .Home .navbar .icons-holder .arrow-holder {
-  width: 50%;
-  -ms-grid-column-align: end;
-      justify-self: end;
+.App .Home .windows-content .text-holder-windows-left {
+  left: -65%;
+  opacity: 0;
 }
 
-.App .Home .navbar .icons-holder .arrow-holder .arrow {
-  width: 100%;
-  height: 55px;
+.App .Home .windows-content .text-holder-windows-left img {
+  opacity: 0;
+  position: absolute;
+  height: 50vh;
+  top: 15%;
+  left: 20%;
+  z-index: 9;
+}
+
+.App .Home .windows-content .text-holder-windows-right {
+  right: -65%;
+  opacity: 0;
+  height: 50vh;
+  margin-top: 45vh;
+}
+
+.App .Home .windows-content .text-holder-windows-right h2 {
+  text-align: right;
+  padding-top: 1%;
+  padding-right: 5%;
+}
+
+.App .Home .windows-content .text-holder-windows-right h4 {
+  text-align: right;
+  padding-right: 5%;
+}
+
+.App .Home .windows-content .text-holder-windows-right img {
+  opacity: 0;
+  position: absolute;
+  height: 50vh;
+  top: 10%;
+  right: 25%;
+}
+
+.App .Home .windows-content .navbar-holder {
+  position: fixed;
+  width: 5%;
+}
+
+.App .Home .windows-content .navbar-holder .navbar {
+  position: absolute;
+  width: 80%;
+  left: 20%;
+  top: 35%;
+}
+
+.App .Home .windows-content .navbar-holder .navbar hr {
+  border: none;
+  height: 3px;
+  width: 30%;
+  margin: 30%;
+  margin-top: 45px;
+  margin-bottom: 45px;
   color: #fff;
+  background-color: #fff;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
 }
 
-.App .Home .navbar .icons-holder .arrow-holder .arrow:hover {
-  cursor: pointer;
-  color: #06634c;
-}
-
-.App .Home .navbar .icons-holder .circle-holder {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 12px;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.App .Home .navbar .icons-holder .circle-holder .circle.active {
-  color: #06634c;
+.App .Home .windows-content .navbar-holder .navbar hr.active {
+  width: 60%;
 }
 
 .App .Home:hover {
@@ -557,7 +381,7 @@ body {
   overflow: auto;
 }
 
-.App .Home.active .home-button1 img {
+.App .Home.active .home-button1 {
   width: 0%;
 }
 
@@ -577,25 +401,19 @@ body {
   width: auto;
   height: 87%;
   bottom: 0%;
-  left: 9%;
+  left: 3%;
   opacity: 1;
   z-index: 10;
   -webkit-animation: opacity 2s ease;
           animation: opacity 2s ease;
 }
 
-.App .Home.active .text-holder {
-  left: 25%;
-  -webkit-transition: 2s all ease;
-  transition: 2s all ease;
-  -webkit-animation: appear-text 2s ease;
-          animation: appear-text 2s ease;
+.App .Home.active .windows-content section {
+  opacity: 1;
 }
 
-.App .Home.active .navbar {
-  opacity: 1;
-  -webkit-animation: appear-buttons  4s ease;
-          animation: appear-buttons  4s ease;
+.App .Home.active .windows-content .presentation-holder .presentation {
+  margin-top: 20%;
 }
 
 .App .Home.active .about-holder {
@@ -612,7 +430,7 @@ body {
   left: 25%;
   top: -25%;
   z-index: 10;
-  border: 8px solid #608BAD;
+  border: 8px solid #3e849b;
   -webkit-transition: 2s all ease;
   transition: 2s all ease;
   overflow: auto;
@@ -680,35 +498,11 @@ body {
   }
 }
 
-@-webkit-keyframes appear-text {
-  0% {
-    left: 100%;
-  }
-  50% {
-    left: 100%;
-  }
-  100% {
-    left: 25%;
-  }
-}
-
-@keyframes appear-text {
-  0% {
-    left: 100%;
-  }
-  50% {
-    left: 100%;
-  }
-  100% {
-    left: 25%;
-  }
-}
-
-@-webkit-keyframes appear-buttons {
+@-webkit-keyframes imgAppear {
   0% {
     opacity: 0;
   }
-  50% {
+  25% {
     opacity: 0;
   }
   100% {
@@ -716,11 +510,11 @@ body {
   }
 }
 
-@keyframes appear-buttons {
+@keyframes imgAppear {
   0% {
     opacity: 0;
   }
-  50% {
+  25% {
     opacity: 0;
   }
   100% {
@@ -779,42 +573,6 @@ body {
   100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-  }
-}
-
-@-webkit-keyframes newWindow {
-  0% {
-    margin-top: 384px;
-  }
-  100% {
-    margin-top: 0px;
-  }
-}
-
-@keyframes newWindow {
-  0% {
-    margin-top: 384px;
-  }
-  100% {
-    margin-top: 0px;
-  }
-}
-
-@-webkit-keyframes oldWindow {
-  0% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -384px;
-  }
-}
-
-@keyframes oldWindow {
-  0% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -384px;
   }
 }
 

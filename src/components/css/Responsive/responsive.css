@@ -1,87 +1,29 @@
-@media screen and (min-height: 785px) {
-  .App .Home .text-holder {
-    width: 50%;
-  }
-  .App .Home .text-holder .presentation {
-    background-size: auto 100%;
-  }
-  .App .Home .text-holder .hardware {
-    background-size: 100% auto;
-  }
-  .App .Home .text-holder .automation {
-    background-size: auto 100%;
-  }
-  .App .Home .text-holder .webDesign {
-    background-size: auto 100%;
-  }
-  .App .Home .text-holder .skills {
-    background-size: auto 100%;
-  }
-  .App .Home .navbar {
-    left: 69%;
-  }
-  .App .Home.active .text-holder {
-    left: 50%;
-    -webkit-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
-  }
-  .App .Home.active .Sergio {
-    left: 0%;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .App .Home .text-holder {
-    width: 60%;
-  }
-  .App .Home .navbar {
-    left: 69%;
-  }
-  .App .Home.active .text-holder {
-    left: 50%;
-    -webkit-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
-  }
-  .App .Home.active .Sergio {
-    left: 0%;
-  }
-}
-
 @media screen and (max-width: 1200px) {
-  .App .Home .text-holder {
-    width: 75%;
-  }
-  .App .Home .text-holder .presentation {
-    margin-top: -70%;
-  }
-  .App .Home .text-holder .hardware {
-    margin-top: -70%;
-  }
-  .App .Home .text-holder .automation {
-    margin-top: -70%;
-  }
-  .App .Home .text-holder .webDesign {
-    margin-top: -70%;
-  }
-  .App .Home .text-holder .skills {
-    margin-top: -70%;
-  }
-  .App .Home .navbar {
-    left: 75%;
-  }
-  .App .Home.active .text-holder {
-    left: 50%;
-    -webkit-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
-  }
   .App .Home.active .Sergio {
-    left: -10%;
+    height: 65%;
   }
 }
 
-@media screen and (max-width: 800px) {
-  body h1 {
-    font-size: 150%;
+@media screen and (max-width: 900px) {
+  .App .Start .socialMedia-holder {
+    width: 100%;
+    height: 10vh;
+    top: 88vh;
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+    right: 0%;
+  }
+  .App .Start .socialMedia-holder .socialMedia {
+    width: 70%;
+    height: 10vh;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10%;
+  }
+  .App .Start .socialMedia-holder .socialMedia a {
+    width: 80%;
   }
   .App .Home {
     -webkit-clip-path: circle(20% at 50% 50%);
@@ -102,100 +44,70 @@
     width: 30%;
     height: 15%;
   }
+  .App .Home .About {
+    font-size: 22px;
+    right: 10%;
+  }
   .App .Home .Sergio {
     width: 100%;
     height: auto;
-    left: -30%;
+    left: -20%;
   }
-  .App .Home .text-holder {
-    width: 75%;
-    height: 52%;
-    bottom: 33%;
-    z-index: 10;
+  .App .Home .windows-content section {
+    width: 100vw;
+    margin-top: 20vh;
   }
-  .App .Home .text-holder .presentation {
-    margin-top: -153%;
-    background-size: 100% auto;
+  .App .Home .windows-content section h2 {
+    font-size: 30px;
   }
-  .App .Home .text-holder .hardware {
-    margin-top: -153%;
-    background-size: auto 100%;
+  .App .Home .windows-content section h3 {
+    font-size: 15px;
   }
-  .App .Home .text-holder .automation {
-    margin-top: -153%;
-    background-position: center;
-    background-size: auto 100%;
+  .App .Home .windows-content section h4 {
+    font-size: 15px;
   }
-  .App .Home .text-holder .webDesign {
-    margin-top: -153%;
-    background-size: auto 100%;
+  .App .Home .windows-content .presentation-holder .presentation {
+    top: 10vh;
+    width: 85%;
   }
-  .App .Home .text-holder .skills {
-    margin-top: -153%;
-    background-size: auto 100%;
+  .App .Home .windows-content .presentation-holder h3 {
+    font-size: 18px;
   }
-  .App .Home .text-holder h2 {
-    font-size: 170%;
-    padding: 2.5%;
+  .App .Home .windows-content .text-holder-windows-left img {
+    height: 25vh;
+    left: 40%;
+    top: 7%;
   }
-  .App .Home .text-holder h3 {
-    font-size: 130%;
-    padding: 0.5%;
+  .App .Home .windows-content .text-holder-windows-right {
+    margin-top: 55vh;
   }
-  .App .Home .text-holder h4 {
-    font-size: 100%;
-    padding: 2%;
-    width: 70%;
-    -webkit-transform: translate(20%, 0%);
-            transform: translate(20%, 0%);
+  .App .Home .windows-content .text-holder-windows-right img {
+    height: 25vh;
+    right: 40%;
+    top: 5%;
   }
-  .App .Home .text-holder .text {
-    width: 60%;
-    margin: auto;
-    font-size: 80%;
+  .App .Home .windows-content .automation img {
+    top: 12%;
+    left: 47%;
   }
-  .App .Home .socialMedia-holder {
-    width: 40%;
-    bottom: 38%;
+  .App .Home .windows-content .computerVision img {
+    top: 2%;
+    right: 47%;
   }
-  .App .Home .socialMedia-holder.active2 {
-    bottom: 38%;
+  .App .Home .windows-content .skills img {
+    top: 11%;
+    left: 30%;
   }
-  .App .Home .socialMedia-holder hr {
-    margin-top: -5%;
+  .App .Home .windows-content .navbar-holder {
+    width: 20vw;
+    margin-top: 0%;
   }
-  .App .Home .socialMedia-holder .socialMedia {
-    width: 100%;
-    grid-gap: 10%;
-    z-index: 1000;
+  .App .Home .windows-content .navbar-holder .navbar {
+    top: 0%;
   }
-  .App .Home .navbar {
-    width: 15%;
-    left: 86%;
-    height: 55%;
-    bottom: 30%;
-  }
-  .App .Home .navbar .icons-holder {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-  }
-  .App .Home .navbar .icons-holder .arrow-holder {
-    width: 200%;
-    position: absolute;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    grid-row-end: 3;
-    top: 102%;
-    left: -160%;
-  }
-  .App .Home .navbar .icons-holder .circle-holder {
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    grid-row-end: 2;
+  .App .Home .windows-content .navbar-holder .navbar hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .App .Home.active:hover {
     -webkit-clip-path: circle(100% at 50% 50%);
@@ -204,8 +116,7 @@
   .App .Home.active .Sergio {
     width: 90%;
     height: auto;
-    left: -25%;
-    z-index: 100;
+    left: -20%;
     bottom: -3%;
   }
   .App .Home.active .text-holder {
@@ -218,9 +129,9 @@
   }
   .App .Home .about-holder {
     width: 80%;
+    height: 50vh;
     margin: auto;
     left: 10%;
-    z-index: 1000;
   }
   .App .Home .about-holder .arrowDown {
     width: 15%;
@@ -233,6 +144,10 @@
   }
   .App .Home .about-holder a img {
     width: 25%;
+  }
+  .App .Home .Back {
+    font-size: 22px;
+    right: 10%;
   }
 }
 
