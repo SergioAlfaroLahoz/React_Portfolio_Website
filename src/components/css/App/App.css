@@ -7,7 +7,7 @@
 }
 
 body {
-  color: #ffffff;
+  color: #000;
 }
 
 .App {
@@ -24,6 +24,7 @@ body {
       flex-wrap: wrap;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 .App .Start .socialMedia-holder {
@@ -44,6 +45,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 .App .Start .socialMedia-holder .socialMedia {
@@ -98,8 +100,8 @@ body {
   position: fixed;
   width: 10%;
   height: 20%;
-  top: 50%;
-  left: 50%;
+  top: 50vh;
+  left: 50vw;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   display: -ms-grid;
@@ -128,7 +130,7 @@ body {
   position: fixed;
   width: 10%;
   height: 20%;
-  top: 0%;
+  top: 0vh;
   left: 49.25%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
@@ -248,6 +250,8 @@ body {
 .App .Home .windows-content section.active .text-holder-windows-left {
   left: 0%;
   opacity: 1;
+  -webkit-animation: objAppear-left 1.5s ease;
+          animation: objAppear-left 1.5s ease;
 }
 
 .App .Home .windows-content section.active .text-holder-windows-left img {
@@ -259,6 +263,8 @@ body {
 .App .Home .windows-content section.active .text-holder-windows-right {
   right: 0%;
   opacity: 1;
+  -webkit-animation: objAppear-right 1.5s ease;
+          animation: objAppear-right 1.5s ease;
 }
 
 .App .Home .windows-content section.active .text-holder-windows-right img {
@@ -445,6 +451,7 @@ body {
 }
 
 .App .Home .about-holder h1 {
+  color: #fff;
   margin: auto;
   padding: 10px;
   margin-top: 15px;
@@ -518,6 +525,50 @@ body {
     opacity: 0;
   }
   100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes objAppear-left {
+  0% {
+    left: -65%;
+    opacity: 1;
+  }
+  100% {
+    left: 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes objAppear-left {
+  0% {
+    left: -65%;
+    opacity: 1;
+  }
+  100% {
+    left: 0%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes objAppear-right {
+  0% {
+    right: -65%;
+    opacity: 0;
+  }
+  100% {
+    right: 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes objAppear-right {
+  0% {
+    right: -65%;
+    opacity: 0;
+  }
+  100% {
+    right: 0%;
     opacity: 1;
   }
 }

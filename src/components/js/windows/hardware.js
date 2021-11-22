@@ -22,7 +22,7 @@ export default class Hardware extends Component {
                     <h4>Microcontrollers</h4>
                     <h4>Raspberry Pi</h4>
                     <h4>Sensors</h4>
-                    <h4>Motors</h4>
+                    <h4>Actuators</h4>
                     <img src={electronicChip} alt="Electronic chip"/>
                 </div>
             </div>    

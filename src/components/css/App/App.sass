@@ -2,15 +2,13 @@ $primary-blue: #3e849b
 $secundary-blue: #42b5db
 
 *
-    height: 100% 
-    width: 100%
     margin: 0
     padding: 0
     box-sizing: border-box
     overflow: hidden
 
 body 
-    color: #ffffff
+    color: #000
     
 .App
     background: #000
@@ -27,6 +25,7 @@ body
         flex-wrap: wrap
         width: 100vw
         height: 100vh
+        overflow: hidden
 
         .socialMedia-holder
             position: absolute
@@ -41,6 +40,7 @@ body
             display: grid
             justify-items: center
             align-items: center
+            overflow: hidden
 
             .socialMedia
                 width: 50%
@@ -79,8 +79,8 @@ body
             position: fixed
             width: 10%
             height: 20%
-            top: 50%
-            left: 50%
+            top: 50vh
+            left: 50vw
             transform: translate(-50%, -50%)
             display: grid
             grid-template-columns: 100%
@@ -98,7 +98,7 @@ body
             position: fixed
             width: 10%
             height: 20%
-            top: 0%
+            top: 0vh
             left: 49.25%
             transform: translate(-50%, 0%)
             display: grid
@@ -194,6 +194,7 @@ body
                     .text-holder-windows-left
                         left: 0%
                         opacity: 1
+                        animation: objAppear-left 1.5s ease
 
                         img 
                             opacity: 1
@@ -202,6 +203,7 @@ body
                     .text-holder-windows-right
                         right: 0%
                         opacity: 1
+                        animation: objAppear-right 1.5s ease
 
                         img
                             opacity: 1
@@ -359,6 +361,7 @@ body
                 color: #fff
 
             h1 
+                color: #fff
                 margin: auto
                 padding: 10px
                 margin-top: 15px
@@ -398,6 +401,22 @@ body
         opacity: 0
     100% 
         opacity: 1
+
+@keyframes objAppear-left
+    0%
+        left: -65%
+        opacity: 1
+    100%
+        left: 0%
+        opacity: 1
+
+@keyframes objAppear-right
+    0%
+        right: -65%
+        opacity: 0
+    100%
+        right: 0%
+        opacity: 1   
 
 @keyframes rotate
     0% 

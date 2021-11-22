@@ -19,17 +19,25 @@
 //Mobile
 @media screen and (max-width: 900px)
     body 
+        margin: 0
+        width: 100vw
+        height: 100vh
+        overflow: hidden
 
     .App
+        height: 100vh
+        overflow: hidden
 
         .Start
 
             .socialMedia-holder
+                position: fixed
                 width: 100%
                 height: 10vh
-                top: 88vh
+                top: auto
                 transform: translate(0%)
                 right: 0%
+                bottom: 2%
 
                 .socialMedia
                     width: 70%
@@ -66,6 +74,8 @@
                 width: 100%
                 height: auto
                 left: -20%
+                top: 100vh
+                transform: translate(0%, -100%)
 
             .windows-content
 
@@ -134,6 +144,7 @@
                         top: 0%
 
                         hr
+                            height: 2px
                             margin-top: 20px
                             margin-bottom: 20px
 
@@ -143,19 +154,15 @@
                     clip-path: circle(100% at 50% 50%)
 
                 .Sergio
-                    width: 90%
+                    width: 75vw
                     height: auto
                     left: -20%
-                    bottom: -3%
+                    top: 100vh
+                    transform: translate(0%, -100%)
 
                 .text-holder
                     left: 12.5%
                     transform: translate(0%, 0%)
-
-                .socialMedia-holder
-
-                    &.active2
-                        bottom: 37%
 
             .about-holder
                 width: 80%
