@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React_Portfolio_Website/static/css/main.bc287c63.chunk.css",
+    "main.css": "/React_Portfolio_Website/static/css/main.abb06d38.chunk.css",
     "main.js": "/React_Portfolio_Website/static/js/main.c2d5f0b7.chunk.js",
     "main.js.map": "/React_Portfolio_Website/static/js/main.c2d5f0b7.chunk.js.map",
     "runtime-main.js": "/React_Portfolio_Website/static/js/runtime-main.7d7a3011.js",
@@ -8,9 +8,9 @@
     "static/js/2.0c9de540.chunk.js": "/React_Portfolio_Website/static/js/2.0c9de540.chunk.js",
     "static/js/2.0c9de540.chunk.js.map": "/React_Portfolio_Website/static/js/2.0c9de540.chunk.js.map",
     "index.html": "/React_Portfolio_Website/index.html",
-    "precache-manifest.9f2fb1fe04f2c1f92f83b22d8a162425.js": "/React_Portfolio_Website/precache-manifest.9f2fb1fe04f2c1f92f83b22d8a162425.js",
+    "precache-manifest.477a46e2c9b1527f0c5a6ee9bd80d073.js": "/React_Portfolio_Website/precache-manifest.477a46e2c9b1527f0c5a6ee9bd80d073.js",
     "service-worker.js": "/React_Portfolio_Website/service-worker.js",
-    "static/css/main.bc287c63.chunk.css.map": "/React_Portfolio_Website/static/css/main.bc287c63.chunk.css.map",
+    "static/css/main.abb06d38.chunk.css.map": "/React_Portfolio_Website/static/css/main.abb06d38.chunk.css.map",
     "static/js/2.0c9de540.chunk.js.LICENSE.txt": "/React_Portfolio_Website/static/js/2.0c9de540.chunk.js.LICENSE.txt",
     "static/media/Artificial_intelligence.png": "/React_Portfolio_Website/static/media/Artificial_intelligence.4ee9c3f9.png",
     "static/media/Automation.png": "/React_Portfolio_Website/static/media/Automation.01598e59.png",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.7d7a3011.js",
     "static/js/2.0c9de540.chunk.js",
-    "static/css/main.bc287c63.chunk.css",
+    "static/css/main.abb06d38.chunk.css",
     "static/js/main.c2d5f0b7.chunk.js"
   ]
 }
