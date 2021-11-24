@@ -472,8 +472,8 @@ body {
   right: 5%;
   font-size: 30px;
   color: #ffffff;
-  -webkit-transition: 0s ease all;
-  transition: 0s ease all;
+  -webkit-transition: 0s all ease;
+  transition: 0s all ease;
 }
 
 .App .Home .Back:hover {
@@ -532,7 +532,7 @@ body {
 @-webkit-keyframes objAppear-left {
   0% {
     left: -65%;
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     left: 0%;
@@ -543,7 +543,7 @@ body {
 @keyframes objAppear-left {
   0% {
     left: -65%;
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     left: 0%;

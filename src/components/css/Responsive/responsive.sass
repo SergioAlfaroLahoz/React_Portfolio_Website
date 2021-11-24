@@ -94,6 +94,14 @@
                     h4
                         font-size: 15px
 
+                    &.active
+
+                        .text-holder-windows-left
+                            animation: appear-text 4s ease
+
+                        .text-holder-windows-right
+                            animation: appear-text 4s ease
+
                 .presentation-holder
 
                     .presentation
@@ -104,6 +112,7 @@
                         font-size: 18px
 
                 .text-holder-windows-left
+                    left: -75%
 
                     img
                         height: 25vh
@@ -111,6 +120,7 @@
                         top: 7%
 
                 .text-holder-windows-right
+                    right: -75%
                     margin-top: 55vh
 
                     img
@@ -121,7 +131,7 @@
                 .automation
                     
                     img
-                        top: 12%
+                        top: 13%
                         left: 47%
 
                 .computerVision
@@ -187,11 +197,10 @@
                 font-size: 22px
                 right: 10%
 
+
 @keyframes appear-text
-0%
-    left: 100%
-50%
-    left: 100%
-100%
-    left: 12.5%
+    from
+        opacity: 0
+    to
+        opacity: 1
                     

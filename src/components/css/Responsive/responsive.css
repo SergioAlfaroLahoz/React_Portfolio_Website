@@ -81,6 +81,14 @@
   .App .Home .windows-content section h4 {
     font-size: 15px;
   }
+  .App .Home .windows-content section.active .text-holder-windows-left {
+    -webkit-animation: appear-text 4s ease;
+            animation: appear-text 4s ease;
+  }
+  .App .Home .windows-content section.active .text-holder-windows-right {
+    -webkit-animation: appear-text 4s ease;
+            animation: appear-text 4s ease;
+  }
   .App .Home .windows-content .presentation-holder .presentation {
     top: 10vh;
     width: 85%;
@@ -88,12 +96,16 @@
   .App .Home .windows-content .presentation-holder h3 {
     font-size: 18px;
   }
+  .App .Home .windows-content .text-holder-windows-left {
+    left: -75%;
+  }
   .App .Home .windows-content .text-holder-windows-left img {
     height: 25vh;
     left: 40%;
     top: 7%;
   }
   .App .Home .windows-content .text-holder-windows-right {
+    right: -75%;
     margin-top: 55vh;
   }
   .App .Home .windows-content .text-holder-windows-right img {
@@ -102,7 +114,7 @@
     top: 5%;
   }
   .App .Home .windows-content .automation img {
-    top: 12%;
+    top: 13%;
     left: 47%;
   }
   .App .Home .windows-content .computerVision img {
@@ -166,17 +178,21 @@
   }
 }
 
-@-webkit-keyframes appear-text {}
-
-@keyframes appear-text {}0% {
-  left: 100%;
+@-webkit-keyframes appear-text {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-50% {
-  left: 100%;
-}
-
-100% {
-  left: 12.5%;
+@keyframes appear-text {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=responsive.css.map */
