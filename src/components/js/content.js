@@ -11,6 +11,8 @@ import ComputerVision from './windows/computerVision'
 import Skills from './windows/skills';
 import Navbar from './navbar';
 
+import Sergio from '../img/Sergio_Without_Background_BW.png';
+
 
 export default class Content extends Component {
 
@@ -69,6 +71,7 @@ export default class Content extends Component {
     render() {
         return(
             <div className="windows-content"  ref={this.myRef} onScroll={this.handleScroll}>
+                <img className="Sergio" src={Sergio} alt="Sergio" id="Sergio"></img>
                 <section className="navbar-holder" id="navbar-holder">
                     <Navbar name="navbar" bar={this.state.window}/>
                 </section>

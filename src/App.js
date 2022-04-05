@@ -13,7 +13,6 @@ import About from './components/js/about';
 
 //Pictures
 import Brain from './components/img/Brain_blue.png';
-import Sergio from './components/img/Sergio_Without_Background_BW.png';
 
 class App extends Component { 
 
@@ -74,7 +73,6 @@ class App extends Component {
             <Switch>
 
               <Route exact path="/">
-                  <img className="Sergio" src={Sergio} alt="Sergio" id="Sergio"></img>
                   <Link to="/About"><h2 className='About'>About</h2></Link>
                   <Content/>
               </Route>

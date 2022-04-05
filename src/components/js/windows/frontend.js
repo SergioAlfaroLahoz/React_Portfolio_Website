@@ -21,6 +21,7 @@ export default class WebDesign extends Component {
                 <h4>CSS</h4>
                 <h4>JavaScript</h4>
                 <h4>ReactJS</h4>
+                <h4>React Native</h4>
                 <img src={frontEndImg} alt="Frontend"/>
             </div>    
         );

@@ -16,11 +16,11 @@ export default class ComputerVision extends Component {
             <div className={this.props.name}>
                 <div>
                     <h2>COMPUTER VISION</h2>
+                    <h4>Deep Learning</h4>
                     <h4>Tensorflow</h4>
                     <h4>Object Detection</h4>
-                    <h4>NVIDIA Jetson nano</h4>
+                    <h4>Clasification</h4>
                     <h4>Graphic User Interfaces</h4>
-                    <h4>Optical Character Recognition</h4>
                     <img src={artificialIntelligenceImg} alt="Artificial Intelligence"/>
                 </div>
             </div>    

@@ -124,15 +124,6 @@ body
             &:hover
                 text-decoration-line: underline
 
-        .Sergio
-            position: fixed
-            width: auto
-            height: 83%
-            bottom: 0%
-            left: 0%
-            opacity: 0
-            transition: 2.5s all ease
-
         .windows-content
             position: fixed
             height: 100vh
@@ -140,6 +131,16 @@ body
             overflow: auto
             scroll-snap-type: y mandatory
             overflow-y: scroll
+
+            .Sergio
+                position: relative
+                width: auto
+                height: 83%
+                bottom: 0%
+                left: 0%
+                opacity: 0
+                transition: 2.5s all ease
+                z-index: 10
 
             section
                 opacity: 0
@@ -150,6 +151,7 @@ body
                 display: table 
                 scroll-snap-align: center
                 transition: 1.5s all ease
+                z-index: 12
 
                 section
                     position: absolute

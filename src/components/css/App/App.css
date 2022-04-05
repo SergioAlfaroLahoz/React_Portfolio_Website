@@ -170,17 +170,6 @@ body {
           text-decoration-line: underline;
 }
 
-.App .Home .Sergio {
-  position: fixed;
-  width: auto;
-  height: 83%;
-  bottom: 0%;
-  left: 0%;
-  opacity: 0;
-  -webkit-transition: 2.5s all ease;
-  transition: 2.5s all ease;
-}
-
 .App .Home .windows-content {
   position: fixed;
   height: 100vh;
@@ -189,6 +178,18 @@ body {
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
   overflow-y: scroll;
+}
+
+.App .Home .windows-content .Sergio {
+  position: relative;
+  width: auto;
+  height: 83%;
+  bottom: 0%;
+  left: 0%;
+  opacity: 0;
+  -webkit-transition: 2.5s all ease;
+  transition: 2.5s all ease;
+  z-index: 10;
 }
 
 .App .Home .windows-content section {
@@ -201,6 +202,7 @@ body {
   scroll-snap-align: center;
   -webkit-transition: 1.5s all ease;
   transition: 1.5s all ease;
+  z-index: 12;
 }
 
 .App .Home .windows-content section section {
