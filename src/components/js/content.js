@@ -2,13 +2,14 @@ import React, {Component} from 'react';
 
 //Components
 import Presentation from './windows/presentation';
-import Firmware from './windows/firmware';
-import Hardware from './windows/hardware';
-import Automation from './windows/automation';
-import Frontend from './windows/frontend';
-import Backend from './windows/backend';
-import ComputerVision from './windows/computerVision'
-import Skills from './windows/skills';
+import Description from './windows/description';
+// import Firmware from './windows/firmware';
+// import Hardware from './windows/hardware';
+// import Automation from './windows/automation';
+// import Frontend from './windows/frontend';
+// import Backend from './windows/backend';
+// import ComputerVision from './windows/computerVision'
+// import Skills from './windows/skills';
 import Navbar from './navbar';
 
 import Sergio from '../img/Sergio_Without_Background_BW.png';
@@ -21,16 +22,19 @@ export default class Content extends Component {
         this.myRef = React.createRef();
         this.state = {
             presentation: 'presentation-holder',
-            electronic: 'electronic-holder',
-            fullstack: 'fullstack-holder',
-            AI: 'AI-holder',
-            skills: 'skills-holder',
-            window: ['bar active', 'bar', 'bar', 'bar', 'bar'],
+            description: 'description-holder',
+            // electronic: 'electronic-holder',
+            // fullstack: 'fullstack-holder',
+            // AI: 'AI-holder',
+            // skills: 'skills-holder',
+            // window: ['bar active', 'bar', 'bar', 'bar', 'bar'],
+            window: ['bar active', 'bar'],
         }
     }
 
     changeSize(stateid, elementID, nWindow){
-        var newWindow = ['bar', 'bar', 'bar', 'bar', 'bar']
+        // var newWindow = ['bar', 'bar', 'bar', 'bar', 'bar']
+        var newWindow = ['bar', 'bar']
         let elementHolder = document.getElementById(elementID)
         var windowHeight = document.documentElement.scrollHeight //browser window height
         var elementDistanceTop = elementHolder.getBoundingClientRect().top //distance from the top of the object to the top of the window
@@ -52,16 +56,17 @@ export default class Content extends Component {
             var position = -20-(scrollTop * 0.1)
             if(position<-100) position = -100
         }else{
-            var position = 3-(scrollTop * 0.1)
+            position = 3-(scrollTop * 0.1)
             if(position<-50) position = -50
         }
         sergio.style.left = position + '%'
     
         this.changeSize("presentation", "presentation-holder", 0)
-        this.changeSize("electronic", "electronic-holder", 1)
-        this.changeSize("fullstack", "fullstack-holder", 2)
-        this.changeSize("AI", "AI-holder", 3)
-        this.changeSize("skills", "skills-holder", 4)
+        this.changeSize("description", "description-holder", 1)
+        // this.changeSize("electronic", "electronic-holder", 1)
+        // this.changeSize("fullstack", "fullstack-holder", 2)
+        // this.changeSize("AI", "AI-holder", 3)
+        // this.changeSize("skills", "skills-holder", 4)
         this.setState({
             scrollTop: scrollTop
         })
@@ -78,7 +83,10 @@ export default class Content extends Component {
                 <section className={this.state.presentation} id="presentation-holder">
                     <Presentation name="presentation"/>
                 </section>
-                <section className={this.state.electronic} id="electronic-holder">
+                <section className={this.state.description} id="description-holder">
+                    <Description name="description"/>
+                </section>
+                {/* <section className={this.state.electronic} id="electronic-holder">
                     <section className="text-holder-windows-left" id="firmware-holder">
                         <Firmware name="firmware"/>
                     </section>
@@ -106,7 +114,7 @@ export default class Content extends Component {
                     <section className="text-holder-windows-left" id="skills-holder">
                         <Skills name="skills"/>
                     </section>
-                </section>
+                </section> */}
             </div>
         );
 

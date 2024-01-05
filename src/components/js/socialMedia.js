@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 
 //Pictures
-import GitHub from '../img/GitHub_blue.png';
-import LinkedIn from '../img/LinkedIn_blue.png';
-import Gmail from '../img/Gmail_blue.png';
+import GitHub from '../img/Github.png';
+import LinkedIn from '../img/Linkedin.png';
+import Gmail from '../img/Gmail.png';
 
 
 export default class socialMedia extends Component {

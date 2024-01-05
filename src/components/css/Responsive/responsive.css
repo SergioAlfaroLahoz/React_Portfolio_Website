@@ -3,7 +3,6 @@
     height: 65%;
   }
 }
-
 @media screen and (max-width: 900px) {
   body {
     margin: 0;
@@ -20,18 +19,15 @@
     width: 100%;
     height: 10vh;
     top: auto;
-    -webkit-transform: translate(0%);
-            transform: translate(0%);
+    transform: translate(0%);
     right: 0%;
     bottom: 2%;
   }
   .App .Start .socialMedia-holder .socialMedia {
     width: 70%;
     height: 10vh;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 10%;
   }
   .App .Start .socialMedia-holder .socialMedia a {
@@ -65,8 +61,7 @@
     height: auto;
     left: -20%;
     top: 100vh;
-    -webkit-transform: translate(0%, -100%);
-            transform: translate(0%, -100%);
+    transform: translate(0%, -100%);
   }
   .App .Home .windows-content section {
     width: 100vw;
@@ -81,13 +76,14 @@
   .App .Home .windows-content section h4 {
     font-size: 15px;
   }
+  .App .Home .windows-content section h5 {
+    font-size: 15px;
+  }
   .App .Home .windows-content section.active .text-holder-windows-left {
-    -webkit-animation: appear-text 4s ease;
-            animation: appear-text 4s ease;
+    animation: appear-text 4s ease;
   }
   .App .Home .windows-content section.active .text-holder-windows-right {
-    -webkit-animation: appear-text 4s ease;
-            animation: appear-text 4s ease;
+    animation: appear-text 4s ease;
   }
   .App .Home .windows-content .presentation-holder .presentation {
     top: 10vh;
@@ -146,13 +142,11 @@
     height: auto;
     left: -20%;
     top: 100vh;
-    -webkit-transform: translate(0%, -100%);
-            transform: translate(0%, -100%);
+    transform: translate(0%, -100%);
   }
   .App .Home.active .text-holder {
     left: 12.5%;
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
   }
   .App .Home .about-holder {
     width: 80%;
@@ -177,16 +171,6 @@
     right: 10%;
   }
 }
-
-@-webkit-keyframes appear-text {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes appear-text {
   from {
     opacity: 0;
@@ -194,5 +178,4 @@
   to {
     opacity: 1;
   }
-}
-/*# sourceMappingURL=responsive.css.map */
+}/*# sourceMappingURL=responsive.css.map */

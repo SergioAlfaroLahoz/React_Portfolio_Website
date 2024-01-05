@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   overflow: hidden;
 }
 
@@ -14,73 +13,53 @@ body {
   background: #000;
   background-size: cover;
   background-attachment: fixed;
-  font-family: 'Lora', 'Roboto', 'Oxygen', Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Lora", "Roboto", "Oxygen", Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
   overflow: hidden;
 }
-
 .App .Start {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
-
 .App .Start .socialMedia-holder {
   position: absolute;
   width: 10%;
   height: 60vh;
   top: 20vh;
   right: -5%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
   z-index: 11;
-  -webkit-transition: 2s all ease;
   transition: 2s all ease;
   opacity: 1;
-  display: -ms-grid;
   display: grid;
   justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   overflow: hidden;
 }
-
 .App .Start .socialMedia-holder .socialMedia {
   width: 50%;
   height: 40vh;
   margin: auto;
   padding: 5px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 0.5fr 0.5fr 0.5fr;
-      grid-template-rows: 0.5fr 0.5fr 0.5fr;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  grid-template-columns: 1fr;
 }
-
 .App .Start .socialMedia-holder .socialMedia a {
   width: 100%;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  justify-self: center;
+  align-self: center;
 }
-
 .App .Start .socialMedia-holder .socialMedia a:hover {
-  -webkit-animation: rotate 1.5s ease;
-          animation: rotate 1.5s ease;
+  animation: rotate 1.5s ease;
 }
-
 .App .Start .socialMedia-holder .socialMedia a img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
-
 .App .Home {
   background: #b9b9b9;
   position: fixed;
@@ -90,96 +69,67 @@ body {
   text-align: center;
   -webkit-clip-path: circle(7% at 50% 50%);
           clip-path: circle(7% at 50% 50%);
-  -webkit-transition: 2s ease all;
   transition: 2s ease all;
   overflow: hidden;
   z-index: 5;
 }
-
 .App .Home .home-button1 {
   position: fixed;
   width: 10%;
   height: 20%;
   top: 50vh;
   left: 50vw;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: -ms-grid;
+  transform: translate(-50%, -50%);
   display: grid;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
-  -ms-grid-rows: 100%;
-      grid-template-rows: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
   z-index: 50;
-  -webkit-transition: 1s ease all;
   transition: 1s ease all;
 }
-
 .App .Home .home-button1 img {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  justify-self: center;
+  align-self: center;
   width: 70%;
-  -webkit-transition: 1s ease all;
   transition: 1s ease all;
 }
-
 .App .Home .home-button2 {
   position: fixed;
   width: 10%;
   height: 20%;
   top: 0vh;
   left: 49.25%;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
-  display: -ms-grid;
+  transform: translate(-50%, 0%);
   display: grid;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
-  -ms-grid-rows: 100%;
-      grid-template-rows: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
   z-index: 50;
 }
-
 .App .Home .home-button2 img {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  justify-self: center;
+  align-self: center;
   width: 0%;
-  -webkit-transition: 1s ease all;
   transition: 1s ease all;
 }
-
 .App .Home .About {
   position: fixed;
   top: 5%;
   right: 5%;
   font-size: 30px;
-  color: #ffffff;
-  -webkit-transition: 0s ease all;
+  color: #d2d2d2;
   transition: 0s ease all;
   z-index: 11;
 }
-
 .App .Home .About:hover {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  color: #2ab5b0;
 }
-
 .App .Home .windows-content {
   position: fixed;
   height: 100vh;
   width: 100vw;
   overflow: auto;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
-
 .App .Home .windows-content .Sergio {
   position: relative;
   width: auto;
@@ -187,11 +137,9 @@ body {
   bottom: 0%;
   left: 0%;
   opacity: 0;
-  -webkit-transition: 2.5s all ease;
   transition: 2.5s all ease;
   z-index: 10;
 }
-
 .App .Home .windows-content section {
   opacity: 0;
   position: relative;
@@ -200,28 +148,23 @@ body {
   width: 75vw;
   display: table;
   scroll-snap-align: center;
-  -webkit-transition: 1.5s all ease;
   transition: 1.5s all ease;
   z-index: 12;
 }
-
 .App .Home .windows-content section section {
   position: absolute;
   height: 100vh;
   width: 100%;
   overflow: visible;
 }
-
 .App .Home .windows-content section section div {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-
 .App .Home .windows-content section section div div {
   height: 100%;
 }
-
 .App .Home .windows-content section h2 {
   position: relative;
   text-align: left;
@@ -231,79 +174,99 @@ body {
   color: #42b5db;
   z-index: 9;
 }
-
 .App .Home .windows-content section h3 {
   text-align: left;
-  font-size: 23px;
-  padding-left: 5%;
+  font-size: 40px;
+  padding-left: 15%;
   padding-top: 6%;
-  color: #a3a3a3;
+  color: #d2d2d2;
   z-index: 9;
 }
-
 .App .Home .windows-content section h4 {
   text-align: left;
-  font-size: 22px;
+  font-size: 25px;
   padding: 1%;
-  padding-left: 5%;
-  color: #ffffff;
+  padding-left: 15%;
+  color: #d2d2d2;
 }
-
+.App .Home .windows-content section h5 {
+  text-align: left;
+  font-size: 20px;
+  padding: 1%;
+  padding-top: 2%;
+  padding-left: 15%;
+  color: #d2d2d2;
+}
 .App .Home .windows-content section.active .text-holder-windows-left {
   left: 0%;
   opacity: 1;
-  -webkit-animation: objAppear-left 1.5s ease;
-          animation: objAppear-left 1.5s ease;
+  animation: objAppear-left 1.5s ease;
 }
-
 .App .Home .windows-content section.active .text-holder-windows-left img {
   opacity: 1;
-  -webkit-animation: imgAppear 3s ease;
-          animation: imgAppear 3s ease;
+  animation: imgAppear 3s ease;
 }
-
 .App .Home .windows-content section.active .text-holder-windows-right {
   right: 0%;
   opacity: 1;
-  -webkit-animation: objAppear-right 1.5s ease;
-          animation: objAppear-right 1.5s ease;
+  animation: objAppear-right 1.5s ease;
 }
-
 .App .Home .windows-content section.active .text-holder-windows-right img {
   opacity: 1;
-  -webkit-animation: imgAppear 3s ease;
-          animation: imgAppear 3s ease;
+  animation: imgAppear 3s ease;
 }
-
 .App .Home .windows-content .presentation-holder {
   margin-top: 0%;
 }
-
 .App .Home .windows-content .presentation-holder .presentation {
   position: absolute;
   margin-top: -10%;
   width: 60%;
-  -webkit-transition: 1s all ease;
   transition: 1s all ease;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  -webkit-transition: 2s all ease;
   transition: 2s all ease;
 }
-
 .App .Home .windows-content .presentation-holder h3 {
-  text-align: center;
-  font-size: 27px;
+  text-align: left;
+  font-size: 40px;
   padding: 5px;
+  padding-left: 15%;
 }
-
+.App .Home .windows-content .presentation-holder .website {
+  color: #d2d2d2;
+  text-decoration: none;
+}
+.App .Home .windows-content .presentation-holder .website:hover {
+  color: #2ab5b0;
+}
+.App .Home .windows-content .description-holder {
+  margin-top: 0%;
+}
+.App .Home .windows-content .description-holder .description {
+  position: absolute;
+  margin-top: 25%;
+  width: 80%;
+  transition: 1s all ease;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 2s all ease;
+}
+.App .Home .windows-content .description-holder h6 {
+  text-align: left;
+  font-size: 22px;
+  padding: 5px;
+  padding-left: 0%;
+  color: #d2d2d2;
+}
 .App .Home .windows-content .text-holder-windows-left {
   left: -65%;
   opacity: 0;
 }
-
 .App .Home .windows-content .text-holder-windows-left img {
   opacity: 0;
   position: absolute;
@@ -312,25 +275,21 @@ body {
   left: 20%;
   z-index: 9;
 }
-
 .App .Home .windows-content .text-holder-windows-right {
   right: -65%;
   opacity: 0;
   height: 50vh;
   margin-top: 45vh;
 }
-
 .App .Home .windows-content .text-holder-windows-right h2 {
   text-align: right;
   padding-top: 1%;
   padding-right: 5%;
 }
-
 .App .Home .windows-content .text-holder-windows-right h4 {
   text-align: right;
   padding-right: 5%;
 }
-
 .App .Home .windows-content .text-holder-windows-right img {
   opacity: 0;
   position: absolute;
@@ -338,19 +297,16 @@ body {
   top: 10%;
   right: 25%;
 }
-
 .App .Home .windows-content .navbar-holder {
   position: fixed;
   width: 5%;
 }
-
 .App .Home .windows-content .navbar-holder .navbar {
   position: absolute;
   width: 80%;
   left: 20%;
   top: 35%;
 }
-
 .App .Home .windows-content .navbar-holder .navbar hr {
   border: none;
   height: 3px;
@@ -358,26 +314,21 @@ body {
   margin: 30%;
   margin-top: 45px;
   margin-bottom: 45px;
-  color: #fff;
-  background-color: #fff;
-  -webkit-transition: 1s all ease;
+  color: #d2d2d2;
+  background-color: #d2d2d2;
   transition: 1s all ease;
 }
-
 .App .Home .windows-content .navbar-holder .navbar hr.active {
   width: 60%;
 }
-
 .App .Home:hover {
   cursor: pointer;
   -webkit-clip-path: circle(6% at 50% 50%);
           clip-path: circle(6% at 50% 50%);
 }
-
 .App .Home:hover .home-button1 img {
   width: 90%;
 }
-
 .App .Home.active {
   -webkit-clip-path: circle(100% at 50% 50%);
           clip-path: circle(100% at 50% 50%);
@@ -388,22 +339,17 @@ body {
   cursor: auto;
   overflow: auto;
 }
-
 .App .Home.active .home-button1 {
   width: 0%;
 }
-
 .App .Home.active .home-button2 img {
-  -webkit-animation: appear 2s ease;
-          animation: appear 2s ease;
+  animation: appear 2s ease;
   width: 50%;
 }
-
 .App .Home.active .home-button2 img:hover {
   cursor: pointer;
   width: 70%;
 }
-
 .App .Home.active .Sergio {
   position: fixed;
   width: auto;
@@ -412,87 +358,58 @@ body {
   left: 3%;
   opacity: 1;
   z-index: 10;
-  -webkit-animation: opacity 2s ease;
-          animation: opacity 2s ease;
+  animation: opacity 2s ease;
 }
-
 .App .Home.active .windows-content section {
   opacity: 1;
 }
-
 .App .Home.active .windows-content .presentation-holder .presentation {
   margin-top: 20%;
 }
-
 .App .Home.active .about-holder {
   top: 25%;
-  -webkit-transition: 2s all ease;
   transition: 2s all ease;
 }
-
 .App .Home .about-holder {
   position: absolute;
   width: 50%;
   height: 60%;
-  background: #000000e5;
+  background: rgba(0, 0, 0, 0.8980392157);
   left: 25%;
   top: -25%;
   z-index: 10;
-  border: 8px solid #3e849b;
-  -webkit-transition: 2s all ease;
+  border: 8px solid #2ab5b0;
   transition: 2s all ease;
   overflow: auto;
-  -webkit-animation: down 1s ease;
-          animation: down 1s ease;
+  animation: down 1s ease;
 }
-
 .App .Home .about-holder .arrowDown {
-  width: 100%;
-  height: 60px;
-  color: #fff;
+  height: 10vh;
+  margin-bottom: 1vh;
 }
-
 .App .Home .about-holder h1 {
-  color: #fff;
+  font-size: 25px;
+  color: #d2d2d2;
   margin: auto;
   padding: 10px;
-  margin-top: 15px;
+  margin-top: 4%;
 }
-
 .App .Home .about-holder a img {
   width: 10%;
 }
-
 .App .Home .about-holder a img:hover {
-  -webkit-animation: rotate 1.5s ease;
-          animation: rotate 1.5s ease;
+  animation: rotate 1.5s ease;
 }
-
 .App .Home .Back {
   position: absolute;
   top: 5%;
   right: 5%;
   font-size: 30px;
-  color: #ffffff;
-  -webkit-transition: 0s all ease;
+  color: #d2d2d2;
   transition: 0s all ease;
 }
-
 .App .Home .Back:hover {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
-
-@-webkit-keyframes appear {
-  0% {
-    width: 0%;
-  }
-  50% {
-    width: 0%;
-  }
-  100% {
-    width: 50%;
-  }
+  color: #2ab5b0;
 }
 
 @keyframes appear {
@@ -506,19 +423,6 @@ body {
     width: 50%;
   }
 }
-
-@-webkit-keyframes imgAppear {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes imgAppear {
   0% {
     opacity: 0;
@@ -530,18 +434,6 @@ body {
     opacity: 1;
   }
 }
-
-@-webkit-keyframes objAppear-left {
-  0% {
-    left: -65%;
-    opacity: 0;
-  }
-  100% {
-    left: 0%;
-    opacity: 1;
-  }
-}
-
 @keyframes objAppear-left {
   0% {
     left: -65%;
@@ -552,18 +444,6 @@ body {
     opacity: 1;
   }
 }
-
-@-webkit-keyframes objAppear-right {
-  0% {
-    right: -65%;
-    opacity: 0;
-  }
-  100% {
-    right: 0%;
-    opacity: 1;
-  }
-}
-
 @keyframes objAppear-right {
   0% {
     right: -65%;
@@ -574,70 +454,26 @@ body {
     opacity: 1;
   }
 }
-
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  20% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-  40% {
-    -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
-  }
-  60% {
-    -webkit-transform: rotate(15deg);
-            transform: rotate(15deg);
-  }
-  80% {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
 @keyframes rotate {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   20% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
+    transform: rotate(10deg);
   }
   40% {
-    -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
+    transform: rotate(-15deg);
   }
   60% {
-    -webkit-transform: rotate(15deg);
-            transform: rotate(15deg);
+    transform: rotate(15deg);
   }
   80% {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
+    transform: rotate(-10deg);
   }
   100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
-
-@-webkit-keyframes down {
-  0% {
-    top: -25%;
-  }
-  100% {
-    top: 25%;
-  }
-}
-
 @keyframes down {
   0% {
     top: -25%;
@@ -646,16 +482,6 @@ body {
     top: 25%;
   }
 }
-
-@-webkit-keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes opacity {
   0% {
     opacity: 0;
@@ -663,5 +489,4 @@ body {
   100% {
     opacity: 1;
   }
-}
-/*# sourceMappingURL=App.css.map */
+}/*# sourceMappingURL=App.css.map */

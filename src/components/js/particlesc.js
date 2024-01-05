@@ -57,7 +57,7 @@ export default class Paticlesc extends Component {
                       "line_linked": {
                         "enable": true,
                         "distance": 120,
-                        "color": "#2ce5fc",
+                        "color": "#00b5b0",
                         "opacity": 0.4,
                         "width": 1
                       },

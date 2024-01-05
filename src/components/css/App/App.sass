@@ -1,5 +1,6 @@
-$primary-blue: #3e849b
+$primary-blue: #2ab5b0
 $secundary-blue: #42b5db
+$grey: #d2d2d2
 
 *
     margin: 0
@@ -117,12 +118,12 @@ body
             top: 5%
             right: 5%
             font-size: 30px
-            color: #ffffff
+            color: $grey
             transition: 0s ease all
             z-index: 11
 
             &:hover
-                text-decoration-line: underline
+                color: $primary-blue
 
         .windows-content
             position: fixed
@@ -178,18 +179,26 @@ body
                 
                 h3
                     text-align: left
-                    font-size: 23px
-                    padding-left: 5%
+                    font-size: 40px
+                    padding-left: 15%
                     padding-top: 6%
-                    color: #a3a3a3
+                    color: $grey
                     z-index: 9
 
                 h4
                     text-align: left
-                    font-size: 22px
+                    font-size: 25px
                     padding: 1%
-                    padding-left: 5%
-                    color: #ffffff
+                    padding-left: 15%
+                    color: $grey
+
+                h5
+                    text-align: left
+                    font-size: 20px
+                    padding: 1%
+                    padding-top: 2%
+                    padding-left: 15%
+                    color: $grey
 
                 &.active
 
@@ -226,9 +235,39 @@ body
                     transition: 2s all ease
                 
                 h3
-                    text-align: center
-                    font-size: 27px
+                    text-align: left
+                    font-size: 40px
                     padding: 5px
+                    padding-left: 15%
+
+                .website
+                    color: $grey
+                    text-decoration: none
+
+                    &:hover
+                        color: $primary-blue
+
+
+            .description-holder
+                margin-top: 0%
+
+                .description
+                    position: absolute
+                    margin-top: 25%
+                    width: 80%
+                    transition: 1s all ease
+                    left: 0
+                    right: 0
+                    margin-left: auto
+                    margin-right: auto
+                    transition: 2s all ease
+                
+                h6
+                    text-align: left
+                    font-size: 22px
+                    padding: 5px
+                    padding-left: 0%
+                    color: $grey
 
             .text-holder-windows-left
                 left: -65%
@@ -281,8 +320,8 @@ body
                         margin: 30%
                         margin-top: 45px
                         margin-bottom: 45px
-                        color: #fff
-                        background-color: #fff
+                        color: $grey
+                        background-color: $grey
                         transition: 1s all ease
 
                         &.active
@@ -358,15 +397,15 @@ body
             animation: down 1s ease
 
             .arrowDown
-                width: 100%
-                height: 60px
-                color: #fff
+                height: 10vh
+                margin-bottom: 1vh
 
             h1 
-                color: #fff
+                font-size: 25px
+                color: $grey
                 margin: auto
                 padding: 10px
-                margin-top: 15px
+                margin-top: 4%
 
             a 
 
@@ -381,11 +420,11 @@ body
             top: 5%
             right: 5%
             font-size: 30px
-            color: #ffffff
+            color: $grey
             transition: 0s all ease
 
             &:hover
-                text-decoration-line: underline
+                color: $primary-blue
    
 
 @keyframes appear

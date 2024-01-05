@@ -1,11 +1,8 @@
 import React, {Component} from 'react';
 
-//Icons
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
-
 //Pictures
-import GitHub from '../img/GitHub_blue.png';
+import GitHub from '../img/Github.png';
+import Arrow from '../img/Arrow_down.png';
 
 export default class About extends Component {
     render(){
@@ -14,7 +11,7 @@ export default class About extends Component {
                 <h1>This website has been created with ReactJS</h1>
                 <h1>Find the code here!</h1>
                 <br/>
-                <FontAwesomeIcon className='arrowDown' icon={faArrowDown}/>
+                <img src={Arrow} alt="arrowDown" className='arrowDown'/>
                 <br/><br/>
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/SergioAlfaroLahoz/React_Portfolio_Website/tree/New-Design" className="GitHub"><img src={GitHub} alt="GitHub"/></a>
             </div>    

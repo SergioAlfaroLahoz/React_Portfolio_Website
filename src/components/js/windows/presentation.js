@@ -6,10 +6,14 @@ export default class Presentation extends Component {
         return(
             <div className={this.props.name}>
                 <h3>
-                    Hello! I'm Sergio Alfaro, an IoT Engineer specialized on connected product development.
-                    Passionate about digital & data transformation, with a curious mind opened to new technologies.
-                    Scroll down to find out more about my skills.
+                    I'm Sergio - 
                 </h3>
+                <h4>
+                    IoT, Electronic & Automation Engineer 
+                </h4>
+                <h5>
+                    Working as Product Owner at <a className="website" target="_blank" rel="noopener noreferrer" href="https://www.bsh-group.com/">BSH</a> - <a className="website" target="_blank" rel="noopener noreferrer" href="https://www.home-connect.com/global">Home Connect</a>
+                </h5>
             </div>    
         );
     }
