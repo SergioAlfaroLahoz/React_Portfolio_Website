@@ -63,6 +63,9 @@
     top: 100vh;
     transform: translate(0%, -100%);
   }
+  .App .Home .windows-content h6 {
+    font-size: 15px;
+  }
   .App .Home .windows-content section {
     width: 100vw;
     margin-top: 20vh;

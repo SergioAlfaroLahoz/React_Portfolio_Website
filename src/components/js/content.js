@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 //Components
 import Presentation from './windows/presentation';
@@ -76,6 +77,7 @@ export default class Content extends Component {
     render() {
         return(
             <div className="windows-content"  ref={this.myRef} onScroll={this.handleScroll}>
+                <Link to="/About"><h2 className='About'>About</h2></Link>
                 <img className="Sergio" src={Sergio} alt="Sergio" id="Sergio"></img>
                 <section className="navbar-holder" id="navbar-holder">
                     <Navbar name="navbar" bar={this.state.window}/>
