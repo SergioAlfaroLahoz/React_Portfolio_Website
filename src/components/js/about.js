@@ -16,7 +16,7 @@ export default class About extends Component {
                     <br/>
                     <img src={Arrow} alt="arrowDown" className='arrowDown'/>
                     <br/><br/>
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/SergioAlfaroLahoz/React_Portfolio_Website/tree/New-Design" className="GitHub"><img src={GitHub} alt="GitHub"/></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/SergioAlfaroLahoz/React_Portfolio_Website/" className="GitHub"><img src={GitHub} alt="GitHub"/></a>
                 </div>  
             </div>  
         );
