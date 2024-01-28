@@ -14,7 +14,7 @@ import SocialMedia from './components/js/socialMedia';
 import About from './components/js/about';
 
 //Pictures
-import Brain from './components/img/Brain_01.png';
+import Brain from './components/img/Brain_02.png';
 
 class App extends Component {
     constructor(props) {
