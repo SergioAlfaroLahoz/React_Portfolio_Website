@@ -63,9 +63,6 @@
     top: 100vh;
     transform: translate(0%, -100%);
   }
-  .App .Home .windows-content h6 {
-    font-size: 15px;
-  }
   .App .Home .windows-content section {
     width: 100vw;
     margin-top: 20vh;
@@ -74,12 +71,14 @@
     font-size: 30px;
   }
   .App .Home .windows-content section h3 {
-    font-size: 15px;
+    font-size: 20px;
   }
   .App .Home .windows-content section h4 {
+    padding-left: 3%;
     font-size: 15px;
   }
   .App .Home .windows-content section h5 {
+    padding-left: 3%;
     font-size: 15px;
   }
   .App .Home .windows-content section.active .text-holder-windows-left {
@@ -93,7 +92,16 @@
     width: 85%;
   }
   .App .Home .windows-content .presentation-holder h3 {
+    padding: 0px;
+    padding-left: 3%;
     font-size: 18px;
+  }
+  .App .Home .windows-content .description-holder .description {
+    top: 10vh;
+  }
+  .App .Home .windows-content .description-holder .description h6 {
+    padding-left: 3%;
+    font-size: 15px;
   }
   .App .Home .windows-content .text-holder-windows-left {
     left: -75%;
@@ -112,21 +120,9 @@
     right: 40%;
     top: 5%;
   }
-  .App .Home .windows-content .automation img {
-    top: 13%;
-    left: 47%;
-  }
-  .App .Home .windows-content .computerVision img {
-    top: 2%;
-    right: 47%;
-  }
-  .App .Home .windows-content .skills img {
-    top: 11%;
-    left: 30%;
-  }
   .App .Home .windows-content .navbar-holder {
     width: 20vw;
-    margin-top: 0%;
+    margin-top: 5%;
   }
   .App .Home .windows-content .navbar-holder .navbar {
     top: 0%;
