@@ -1,6 +1,6 @@
 @media screen and (max-width: 1200px) {
   .App .Home.active .Sergio {
-    height: 65%;
+    height: 60%;
   }
 }
 @media screen and (max-width: 900px) {
@@ -58,9 +58,9 @@
     z-index: 55;
   }
   .App .Home .Sergio {
-    width: 100%;
+    width: 65vh;
     height: auto;
-    left: -20%;
+    left: -10%;
     top: 100vh;
     transform: translate(0%, -100%);
   }
@@ -71,16 +71,10 @@
   .App .Home .windows-content section h2 {
     font-size: 30px;
   }
-  .App .Home .windows-content section h3 {
-    font-size: 20px;
-  }
   .App .Home .windows-content section h4 {
     padding-left: 3%;
-    font-size: 15px;
-  }
-  .App .Home .windows-content section h5 {
-    padding-left: 3%;
-    font-size: 15px;
+    font-size: 3vw;
+    text-align: right;
   }
   .App .Home .windows-content section.active .text-holder-windows-left {
     animation: appear-text 4s ease;
@@ -95,12 +89,16 @@
   .App .Home .windows-content .presentation-holder h3 {
     padding: 0px;
     padding-left: 3%;
-    font-size: 18px;
+    text-align: right;
+    font-size: 18vw;
+  }
+  .App .Home .windows-content .presentation-holder hr {
+    left: 88%;
   }
   .App .Home .windows-content .description-holder .description {
     top: 10vh;
   }
-  .App .Home .windows-content .description-holder .description h6 {
+  .App .Home .windows-content .description-holder .description h5 {
     padding-left: 3%;
     font-size: 15px;
   }
@@ -138,9 +136,9 @@
             clip-path: circle(100% at 50% 50%);
   }
   .App .Home.active .Sergio {
-    width: 75vw;
+    width: 65vw;
     height: auto;
-    left: -20%;
+    left: -10%;
     top: 100vh;
     transform: translate(0%, -100%);
   }
@@ -149,18 +147,17 @@
     transform: translate(0%, 0%);
   }
   .App .Home .about-holder {
-    width: 80%;
+    width: 70%;
     height: 50vh;
     margin: auto;
-    left: 10%;
+    left: 15%;
   }
   .App .Home .about-holder .arrowDown {
-    width: 15%;
-    margin-top: -3%;
-    margin-bottom: -4%;
+    margin-top: -1%;
+    margin-bottom: -1%;
   }
   .App .Home .about-holder h1 {
-    font-size: 150%;
+    font-size: 130%;
     padding: 0.5%;
   }
   .App .Home .about-holder a img {

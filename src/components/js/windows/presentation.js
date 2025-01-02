@@ -6,14 +6,14 @@ export default class Presentation extends Component {
         return(
             <div className={this.props.name}>
                 <h3>
-                    I'm Sergio - 
+                    Hello!
                 </h3>
+                <hr/>
                 <h4>
-                    IoT, Electronic & Automation Engineer 
+                    I'm Sergio, an IoT, Electronics, and Automation Engineer 
+                    passionate about creating smarter, connected solutions.
+                    <br/>I work as Product Owner at <a className="website" target="_blank" rel="noopener noreferrer" href="https://www.bsh-group.com/">BSH</a> - <a className="website" target="_blank" rel="noopener noreferrer" href="https://www.home-connect.com/global">Home Connect</a>.
                 </h4>
-                <h5>
-                    Working as Product Owner at <a className="website" target="_blank" rel="noopener noreferrer" href="https://www.bsh-group.com/">BSH</a> - <a className="website" target="_blank" rel="noopener noreferrer" href="https://www.home-connect.com/global">Home Connect</a>
-                </h5>
             </div>    
         );
     }

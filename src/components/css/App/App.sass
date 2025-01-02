@@ -19,7 +19,7 @@ body
     -o-background-size: cover
     background-size: cover
     background-attachment: fixed
-    font-family: 'Lora', 'Roboto', 'Oxygen', Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: 'Product Sans','Lora', 'Roboto', 'Oxygen', Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
     font-weight: 400
     overflow: hidden
 
@@ -101,7 +101,7 @@ body
             width: 10%
             height: 20%
             top: 0vh
-            left: 49.25%
+            left: 50vw
             transform: translate(-50%, 0%)
             display: grid
             grid-template-columns: 100%
@@ -137,9 +137,9 @@ body
             .Sergio
                 position: relative
                 width: auto
-                height: 83%
+                height: 80%
                 bottom: 0%
-                left: 0%
+                left: 10%
                 opacity: 0
                 transition: 2.5s all ease
                 z-index: 10
@@ -180,25 +180,17 @@ body
                 
                 h3
                     text-align: left
-                    font-size: 40px
-                    padding-left: 15%
+                    font-size: 7vw
+                    padding-left: 10%
                     padding-top: 6%
                     color: $grey
                     z-index: 9
 
                 h4
                     text-align: left
-                    font-size: 25px
+                    font-size: 1.1vw
                     padding: 1%
-                    padding-left: 15%
-                    color: $grey
-
-                h5
-                    text-align: left
-                    font-size: 20px
-                    padding: 1%
-                    padding-top: 2%
-                    padding-left: 15%
+                    padding-left: 11%
                     color: $grey
 
                 &.active
@@ -227,7 +219,7 @@ body
                 .presentation
                     position: absolute
                     margin-top: -10%
-                    width: 60%
+                    width: 50%
                     transition: 1s all ease
                     left: 0
                     right: 0
@@ -236,10 +228,18 @@ body
                     transition: 2s all ease
                 
                 h3
-                    text-align: left
-                    font-size: 40px
                     padding: 5px
-                    padding-left: 15%
+                    padding-left: 10%
+
+                hr
+                    position: relative
+                    left: 11%
+                    width: 10%
+                    border: 0
+                    border-top: 3px solid
+                    color: $grey
+                    margin-top: -1%
+                    margin-bottom: 3%
 
                 .website
                     color: $grey
@@ -263,7 +263,7 @@ body
                     margin-right: auto
                     transition: 2s all ease
                 
-                h6
+                h5
                     text-align: left
                     font-size: 22px
                     padding: 5px
@@ -339,7 +339,7 @@ body
 
         &.active
             clip-path: circle(100% at 50% 50%)
-            background: #000
+            background: radial-gradient(circle at 65% 30%, rgba(255, 255, 255, 0.112) 30%, transparent 90%), #000
             // background: url('../../img/background5.jpg')
             background-size: 100vw auto
             background-repeat: no-repeat
@@ -363,9 +363,9 @@ body
             .Sergio
                 position: fixed
                 width: auto
-                height: 87%
+                height: 80%
                 bottom: 0%
-                left: 3%
+                left: 10%
                 opacity: 1
                 z-index: 10
                 animation: opacity 2s ease
@@ -378,7 +378,7 @@ body
                 .presentation-holder
 
                     .presentation
-                        margin-top: 20%
+                        margin-top: 15%
 
             .about-holder
                 top: 25%
@@ -388,17 +388,15 @@ body
             position: absolute
             width: 50%
             height: 60%
-            background: #000000e5
             left: 25%
             top: -25%
             z-index: 10
-            border: 8px solid $primary-blue
             transition: 2s all ease
             overflow: auto
             animation: down 1s ease
 
             .arrowDown
-                height: 10vh
+                height: 7vh
                 margin-bottom: 1vh
 
             h1 

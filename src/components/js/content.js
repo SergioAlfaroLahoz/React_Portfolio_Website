@@ -40,10 +40,10 @@ export default class Content extends Component {
         let sergio = document.getElementById("Sergio")
         const scrollTop = this.myRef.current.scrollTop
         if(window.innerWidth < 800){
-            var position = -20-(scrollTop * 0.1)
+            var position = -10-(scrollTop * 0.1)
             if(position<-100) position = -100
         }else{
-            position = 3-(scrollTop * 0.1)
+            position = 10-(scrollTop * 0.1)
             if(position<-50) position = -50
         }
         sergio.style.left = position + '%'

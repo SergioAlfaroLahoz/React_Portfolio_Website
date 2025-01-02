@@ -13,7 +13,7 @@ body {
   background: #000;
   background-size: cover;
   background-attachment: fixed;
-  font-family: "Lora", "Roboto", "Oxygen", Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Product Sans", "Lora", "Roboto", "Oxygen", Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
   overflow: hidden;
 }
@@ -97,7 +97,7 @@ body {
   width: 10%;
   height: 20%;
   top: 0vh;
-  left: 49.25%;
+  left: 50vw;
   transform: translate(-50%, 0%);
   display: grid;
   grid-template-columns: 100%;
@@ -133,9 +133,9 @@ body {
 .App .Home .windows-content .Sergio {
   position: relative;
   width: auto;
-  height: 83%;
+  height: 80%;
   bottom: 0%;
-  left: 0%;
+  left: 10%;
   opacity: 0;
   transition: 2.5s all ease;
   z-index: 10;
@@ -176,25 +176,17 @@ body {
 }
 .App .Home .windows-content section h3 {
   text-align: left;
-  font-size: 40px;
-  padding-left: 15%;
+  font-size: 7vw;
+  padding-left: 10%;
   padding-top: 6%;
   color: #d2d2d2;
   z-index: 9;
 }
 .App .Home .windows-content section h4 {
   text-align: left;
-  font-size: 25px;
+  font-size: 1.1vw;
   padding: 1%;
-  padding-left: 15%;
-  color: #d2d2d2;
-}
-.App .Home .windows-content section h5 {
-  text-align: left;
-  font-size: 20px;
-  padding: 1%;
-  padding-top: 2%;
-  padding-left: 15%;
+  padding-left: 11%;
   color: #d2d2d2;
 }
 .App .Home .windows-content section.active .text-holder-windows-left {
@@ -221,7 +213,7 @@ body {
 .App .Home .windows-content .presentation-holder .presentation {
   position: absolute;
   margin-top: -10%;
-  width: 60%;
+  width: 50%;
   transition: 1s all ease;
   left: 0;
   right: 0;
@@ -230,10 +222,18 @@ body {
   transition: 2s all ease;
 }
 .App .Home .windows-content .presentation-holder h3 {
-  text-align: left;
-  font-size: 40px;
   padding: 5px;
-  padding-left: 15%;
+  padding-left: 10%;
+}
+.App .Home .windows-content .presentation-holder hr {
+  position: relative;
+  left: 11%;
+  width: 10%;
+  border: 0;
+  border-top: 3px solid;
+  color: #d2d2d2;
+  margin-top: -1%;
+  margin-bottom: 3%;
 }
 .App .Home .windows-content .presentation-holder .website {
   color: #d2d2d2;
@@ -256,7 +256,7 @@ body {
   margin-right: auto;
   transition: 2s all ease;
 }
-.App .Home .windows-content .description-holder h6 {
+.App .Home .windows-content .description-holder h5 {
   text-align: left;
   font-size: 22px;
   padding: 5px;
@@ -332,7 +332,7 @@ body {
 .App .Home.active {
   -webkit-clip-path: circle(100% at 50% 50%);
           clip-path: circle(100% at 50% 50%);
-  background: #000;
+  background: radial-gradient(circle at 65% 30%, rgba(255, 255, 255, 0.112) 30%, transparent 90%), #000;
   background-size: 100vw auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -353,9 +353,9 @@ body {
 .App .Home.active .Sergio {
   position: fixed;
   width: auto;
-  height: 87%;
+  height: 80%;
   bottom: 0%;
-  left: 3%;
+  left: 10%;
   opacity: 1;
   z-index: 10;
   animation: opacity 2s ease;
@@ -364,7 +364,7 @@ body {
   opacity: 1;
 }
 .App .Home.active .windows-content .presentation-holder .presentation {
-  margin-top: 20%;
+  margin-top: 15%;
 }
 .App .Home.active .about-holder {
   top: 25%;
@@ -374,17 +374,15 @@ body {
   position: absolute;
   width: 50%;
   height: 60%;
-  background: rgba(0, 0, 0, 0.8980392157);
   left: 25%;
   top: -25%;
   z-index: 10;
-  border: 8px solid #0f9198;
   transition: 2s all ease;
   overflow: auto;
   animation: down 1s ease;
 }
 .App .Home .about-holder .arrowDown {
-  height: 10vh;
+  height: 7vh;
   margin-bottom: 1vh;
 }
 .App .Home .about-holder h1 {
