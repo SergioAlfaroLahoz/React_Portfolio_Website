@@ -72,8 +72,8 @@
     font-size: 30px;
   }
   .App .Home .windows-content section h4 {
-    padding-left: 3%;
-    font-size: 3vw;
+    padding-left: 18%;
+    font-size: 4vw;
     text-align: right;
   }
   .App .Home .windows-content section.active .text-holder-windows-left {
@@ -83,14 +83,14 @@
     animation: appear-text 4s ease;
   }
   .App .Home .windows-content .presentation-holder .presentation {
-    top: 10vh;
+    top: 8vh;
     width: 85%;
   }
   .App .Home .windows-content .presentation-holder h3 {
     padding: 0px;
     padding-left: 3%;
     text-align: right;
-    font-size: 18vw;
+    font-size: 15vw;
   }
   .App .Home .windows-content .presentation-holder hr {
     left: 88%;

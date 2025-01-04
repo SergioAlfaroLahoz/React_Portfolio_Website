@@ -13,7 +13,7 @@ body {
   background: #000;
   background-size: cover;
   background-attachment: fixed;
-  font-family: "Product Sans", "Lora", "Roboto", "Oxygen", Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Product Sans", "Roboto", "Oxygen", Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
   overflow: hidden;
 }
@@ -137,7 +137,7 @@ body {
   bottom: 0%;
   left: 10%;
   opacity: 0;
-  transition: 2.5s all ease;
+  transition: 0s all ease;
   z-index: 10;
 }
 .App .Home .windows-content section {
@@ -306,6 +306,7 @@ body {
   width: 80%;
   left: 20%;
   top: 35%;
+  opacity: 0;
 }
 .App .Home .windows-content .navbar-holder .navbar hr {
   border: none;
@@ -358,7 +359,7 @@ body {
   left: 10%;
   opacity: 1;
   z-index: 10;
-  animation: opacity 2s ease;
+  transition: 2s all ease;
 }
 .App .Home.active .windows-content section {
   opacity: 1;
@@ -369,6 +370,9 @@ body {
 .App .Home.active .about-holder {
   top: 25%;
   transition: 2s all ease;
+}
+.App .Home.active .navbar-holder .navbar {
+  opacity: 1;
 }
 .App .Home .about-holder {
   position: absolute;

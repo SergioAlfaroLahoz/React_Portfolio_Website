@@ -19,7 +19,7 @@ body
     -o-background-size: cover
     background-size: cover
     background-attachment: fixed
-    font-family: 'Product Sans','Lora', 'Roboto', 'Oxygen', Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: 'Product Sans', 'Roboto', 'Oxygen', Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
     font-weight: 400
     overflow: hidden
 
@@ -141,7 +141,7 @@ body
                 bottom: 0%
                 left: 10%
                 opacity: 0
-                transition: 2.5s all ease
+                transition:  0s all ease
                 z-index: 10
 
             section
@@ -313,6 +313,7 @@ body
                     width: 80%
                     left: 20%
                     top: 35%
+                    opacity: 0
 
                     hr
                         border: none
@@ -340,7 +341,6 @@ body
         &.active
             clip-path: circle(100% at 50% 50%)
             background: radial-gradient(circle at 65% 30%, rgba(255, 255, 255, 0.112) 30%, transparent 90%), #000
-            // background: url('../../img/background5.jpg')
             background-size: 100vw auto
             background-repeat: no-repeat
             background-position: center
@@ -368,7 +368,8 @@ body
                 left: 10%
                 opacity: 1
                 z-index: 10
-                animation: opacity 2s ease
+                // animation: opacity 2s ease
+                transition:  2s all ease
 
             .windows-content
 
@@ -383,6 +384,11 @@ body
             .about-holder
                 top: 25%
                 transition: 2s all ease
+
+            .navbar-holder
+
+                .navbar
+                    opacity: 1
 
         .about-holder
             position: absolute
@@ -483,4 +489,3 @@ body
         opacity: 0
     100%
         opacity: 1
-
